@@ -1,0 +1,1297 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Miroslav Tourek — Senior iOS Developer</title>
+<meta name="description" content="Senior iOS developer z Prahy. 8 let iOS vývoje ve Swiftu, zkušenosti i se zděděným Objective-C. CLEAN, MVI+C, SwiftUI, Kotlin Multiplatform. Aplikace pro Heureku, ŠKODA AUTO, Tesco nebo Patria Finance.">
+<meta name="author" content="Miroslav Tourek">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Miroslav Tourek — Senior iOS Developer">
+<meta property="og:description" content="8 let iOS vývoje ve Swiftu, zkušenosti i se zděděným Objective-C. CLEAN, MVI+C, SwiftUI, Kotlin Multiplatform. Aplikace pro Heureku, ŠKODA AUTO, Tesco nebo Patria Finance.">
+<meta property="og:locale" content="cs_CZ">
+<meta name="twitter:card" content="summary">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%230f1720'/><text x='16' y='22' font-family='Inter,Menlo,monospace' font-size='15' font-weight='800' fill='%234ad3b4' text-anchor='middle'>mt</text></svg>">
+<link rel="stylesheet" href="style.css">
+<script defer src="https://cloud.umami.is/script.js" data-website-id="1b06e631-d3c2-4215-a438-a8e95da702d8"></script>
+<script>
+  // The theme must be set before first paint, otherwise the light theme
+  // flashes on load. Three modes: 'system' (no attribute, follows the OS),
+  // 'light' and 'dark'. Only an explicit choice is stored.
+  (function () {
+    try {
+      var saved = localStorage.getItem('theme');
+      if (saved === 'dark' || saved === 'light') {
+        document.documentElement.setAttribute('data-theme', saved);
+      }
+    } catch (e) { /* private window or storage disabled — fall back to the OS setting */ }
+  })();
+</script>
+</head>
+<body>
+
+  <a class="skip-link" href="#obsah">Přeskočit na obsah</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="logo" href="#">mt<span>/</span></a>
+      <nav aria-label="Hlavní navigace">
+        <a href="#projekty">Projekty</a>
+        <a href="#zkusenosti">Zkušenosti</a>
+        <a href="#o-mne">O mně</a>
+        <a href="#kontakt">Kontakt</a>
+        <div class="theme-menu">
+          <button class="theme-toggle" type="button" data-mode="system"
+                  aria-haspopup="true" aria-expanded="false" aria-controls="theme-list"
+                  aria-label="Motiv vzhledu: podle systému">
+            <svg class="icon-sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="4.2"/>
+              <path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5.2 5.2l1.4 1.4M17.4 17.4l1.4 1.4M18.8 5.2l-1.4 1.4M6.6 17.4l-1.4 1.4"/>
+            </svg>
+            <svg class="icon-moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M20 13.5A8.2 8.2 0 0 1 10.5 4a8.2 8.2 0 1 0 9.5 9.5z"/>
+            </svg>
+          </button>
+          <ul class="theme-list" id="theme-list" role="menu" hidden>
+            <li role="none">
+              <button type="button" role="menuitemradio" data-choice="system" aria-checked="true">
+                <span class="tick" aria-hidden="true">✓</span> Podle systému
+              </button>
+            </li>
+            <li role="none">
+              <button type="button" role="menuitemradio" data-choice="light" aria-checked="false">
+                <span class="tick" aria-hidden="true">✓</span> Světlý
+              </button>
+            </li>
+            <li role="none">
+              <button type="button" role="menuitemradio" data-choice="dark" aria-checked="false">
+                <span class="tick" aria-hidden="true">✓</span> Tmavý
+              </button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="obsah">
+
+    <section class="hero">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="wrap hero-grid">
+
+        <div class="hero-text">
+        <p class="eyebrow">Senior iOS Developer · Praha</p>
+        <h1>Miroslav<br><span class="accent">Tourek</span></h1>
+        <p class="hero-role">
+          Osm let stavím iOS aplikace — 18 v produkci pro Heureku, ŠKODA AUTO, Tesco nebo
+          Patria Finance. Na většině projektů jako jediný iOS vývojář, poslední skoro pět let
+          jako garant iOS na Heurece: Swift 6, Kotlin Multiplatform a CI/CD s buildem zkráceným
+          ze 14 na 3 minuty.
+        </p>
+        <p class="hero-role">
+          Hledám iOS role v Praze i remote, včetně projektů s Kotlin Multiplatform.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary js-mail" href="#kontakt" data-user="miroslav.tourek+web" data-domain="gmail.com">Napsat e-mail <span aria-hidden="true">→</span></a>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/miroslav-t-97759159" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn btn-ghost" href="https://github.com/Carrione" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn btn-ghost" href="Miroslav_Tourek_CV.pdf" download>Stáhnout CV (PDF)</a>
+        </div>
+        <ul class="hero-stats">
+          <li><strong>8</strong><span>let iOS vývoje</span></li>
+          <li><strong>18</strong><span>aplikací v produkci</span></li>
+          <li><strong>10</strong><span>projektů jako jediný iOS vývojář</span></li>
+        </ul>
+        </div>
+
+        <!-- Same portrait and floating chips as the personal site; the chips name
+             the core stack, so a recruiter sees the match at first glance. -->
+        <div class="hero-portrait" aria-hidden="true">
+          <div class="portrait"><img src="img/portret.jpg" alt="" width="640" height="640"></div>
+          <span class="float-chip chip-1">Swift 6</span>
+          <span class="float-chip chip-4">SwiftUI</span>
+          <span class="float-chip chip-5">UIKit</span>
+          <span class="float-chip chip-2">Kotlin Multiplatform</span>
+          <span class="float-chip chip-3">CLEAN · MVI</span>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="projekty" class="projects">
+      <div class="wrap">
+        <h2>Vybrané projekty<span class="dot">.</span></h2>
+        <p class="section-lead">
+          Aplikace, na kterých jsem pracoval jako iOS vývojář v týmech Heureka Group,
+          adastra.one a Unicorn a.s.
+        </p>
+        <div class="project-grid">
+
+          <article class="project-card" data-dialog="p-heureka">
+            <div class="project-thumb has-icon">
+              <img src="img/icon-heureka-cz.jpg" alt="Ikona aplikace Heureka.cz" width="256" height="256" loading="lazy">
+              <img src="img/icon-heureka-sk.jpg" alt="Ikona aplikace Heureka.sk" width="256" height="256" loading="lazy">
+            </div>
+            <p class="project-tag">E-commerce · Heureka Group</p>
+            <h3>Heureka.cz &amp; Heureka.sk</h3>
+            <p class="project-meta">08/2021 – 05/2026 · CLEAN, MVI + FlowController</p>
+            <p>Skoro 5 let iOS vývoje srovnávačů cen a nákupních rádců pro český
+              a slovenský trh — přes 55 tisíc e-shopů a miliony produktů k porovnání
+              i nákupu. Byl jsem jeden ze dvou kmenových iOS vývojářů, spolu s 2–3
+              vývojáři z agentury. Většinu featur jsme převedli do Kotlin Multiplatform —
+              sdílená je doménová a datová vrstva i část view modelů, UI zůstalo
+              v nativních technologiích SwiftUI, UIKit a Jetpack Compose.
+              Napojoval jsem iOS na sdílenou vrstvu, přepisoval části do sdíleného Kotlinu
+              a přispíval i do UI Androidu. Přechod na Swift 6 a strict concurrency byl
+              v mé režii. Převzal jsem iOS CI/CD a build server, několikrát je přestavěl
+              a build zkrátil ze 14 na 3 minuty.
+              Z jedné codebase vznikají čtyři aplikace — dva trhy, dvě platformy.</p>
+            <ul class="chips">
+              <li>Swift 6</li><li>SwiftUI</li><li>UIKit</li><li>Swift Concurrency</li><li>Combine</li>
+              <li>KMP</li><li>Jetpack Compose</li><li>Koin</li><li>Ktor</li><li>Apollo/GraphQL</li><li>Factory</li>
+              <li>SPM</li><li>Firebase</li>
+              <li>XCTest</li>
+            </ul>
+            <p class="project-links">
+              <a href="https://apps.apple.com/cz/app/heureka-cz-srovnávač-cen/id436106975" target="_blank" rel="noopener">Heureka.cz</a>
+              <a href="https://apps.apple.com/cz/app/heureka-sk-porovnávač-cien/id6465955488" target="_blank" rel="noopener">Heureka.sk</a>
+            </p>
+            <button class="card-more" type="button" data-dialog="p-heureka">Detail projektu</button>
+          </article>
+
+          <article class="project-card" data-dialog="p-radia">
+            <div class="project-thumb has-mosaic">
+              <img src="img/icon-radio-kiss.jpg" alt="Ikona aplikace Radio Kiss" width="256" height="256" loading="lazy">
+              <img src="img/icon-radio-beat.jpg" alt="Ikona aplikace Radio Beat" width="256" height="256" loading="lazy">
+              <img src="img/icon-radio-1.jpg" alt="Ikona aplikace Radio 1" width="256" height="256" loading="lazy">
+              <img src="img/icon-spin-radio.jpg" alt="Ikona aplikace SPIN RADIO" width="256" height="256" loading="lazy">
+              <img src="img/icon-country-radio.jpg" alt="Ikona aplikace Country Radio" width="256" height="256" loading="lazy">
+              <img src="img/icon-signal-radio.jpg" alt="Ikona aplikace Signál Rádio" width="256" height="256" loading="lazy">
+            </div>
+            <p class="project-tag">Média · MEDIA CLUB</p>
+            <h3>Radio Kiss, Beat, Radio 1, Spin, Country a Signál</h3>
+            <p class="project-meta">11/2019 – 03/2020 · Coordinator + MVVM</p>
+            <p>Aplikace šesti komerčních rozhlasových stanic — živé vysílání, novinky,
+              program a profily moderátorů. Zděděnou codebase jsem po analýze od základu
+              přepsal a postavil ji tak, aby z ní vznikalo všech šest aplikací, každá
+              s vlastním brandem, obsahem i částí funkcí. Celou šestici jsem dodal za pět
+              měsíců. Byl jsem jediný iOS vývojář projektu. Pracoval jsem v týmu
+              s grafikem a backend vývojářem.</p>
+            <ul class="chips">
+              <li>Swift 5</li><li>UIKit</li><li>AVAudioRecorder</li><li>Alamofire</li>
+              <li>Firebase</li><li>CocoaPods</li><li>TestFlight</li>
+              <li>XCTest</li>
+            </ul>
+            <p class="project-links">
+              <a href="https://apps.apple.com/cz/app/radio-kiss/id967217746" target="_blank" rel="noopener">Kiss</a>
+              <a href="https://apps.apple.com/cz/app/radio-beat/id979842840" target="_blank" rel="noopener">Beat</a>
+              <a href="https://apps.apple.com/cz/app/radio-1/id960300605" target="_blank" rel="noopener">Radio 1</a>
+              <a href="https://apps.apple.com/cz/app/spin-radio/id967919477" target="_blank" rel="noopener">Spin</a>
+              <a href="https://apps.apple.com/cz/app/country-radio/id967927472" target="_blank" rel="noopener">Country</a>
+              <a href="https://apps.apple.com/cz/app/signál-rádio/id979498633" target="_blank" rel="noopener">Signál</a>
+            </p>
+            <button class="card-more" type="button" data-dialog="p-radia">Detail projektu</button>
+          </article>
+
+          <article class="project-card" data-dialog="p-skoda">
+            <div class="project-thumb has-icon">
+              <span class="logo-tile" style="--logo-bg: #0E3A2F; --logo-pad: 3px">
+                <img src="img/icon-skoda.png" alt="Logo ŠKODA" width="256" height="84" loading="lazy">
+              </span>
+            </div>
+            <p class="project-tag">Automotive · ŠKODA AUTO</p>
+            <h3>ŠKODA Portable Check-In</h3>
+            <p class="project-meta">10/2018 – 04/2019 · Coordinator + MVVM</p>
+            <p>Interaktivní vícestránkový formulář pro předávku vozu mezi distributorem
+              ŠKODA AUTO a zákazníkem — fotodokumentace, načtení údajů podle VIN a podpis
+              obou stran na displeji. Dodal jsem čtyři aplikace — edice FULL a LITE
+              ve verzích 2.2 a 3. Aplikace fungovaly i bez připojení, protože v místě
+              předávky často nebylo. Byl jsem jediný iOS vývojář projektu. Aplikace již
+              dnes nejsou v distribuci.</p>
+            <ul class="chips">
+              <li>Swift 4/5</li><li>UIKit</li><li>Alamofire</li><li>XCTest</li>
+            </ul>
+            <button class="card-more" type="button" data-dialog="p-skoda">Detail projektu</button>
+          </article>
+
+          <article class="project-card" data-dialog="p-patria">
+            <div class="project-thumb has-icon">
+              <img src="img/icon-patria.jpg" alt="Ikona aplikace Patria Finance" width="256" height="256" loading="lazy">
+            </div>
+            <p class="project-tag">Fintech · Patria Finance</p>
+            <h3>Patria MobileTrader</h3>
+            <p class="project-meta">10/2018 – 04/2019 · Coordinator + MVVM</p>
+            <p>Obchodní aplikace pro klienty Patria Finance — portfolio, detaily
+              a grafy cenných papírů, zadávání pokynů, cenové alerty a historie
+              transakcí. Byl jsem jediný iOS vývojář projektu. Spolupracoval jsem
+              s vlastníkem produktu.</p>
+            <ul class="chips">
+              <li>Swift 4/5</li><li>UIKit</li><li>Alamofire</li><li>XCTest</li>
+            </ul>
+            <p class="project-links">
+              <a href="https://apps.apple.com/cz/app/patria-finance/id1600463800" target="_blank" rel="noopener">App Store — nástupnická verze</a>
+            </p>
+            <button class="card-more" type="button" data-dialog="p-patria">Detail projektu</button>
+          </article>
+
+          <article class="project-card" data-dialog="p-travel-free">
+            <div class="project-thumb has-icon">
+              <img src="img/icon-travel-free.jpg" alt="Ikona aplikace Travel FREE CZ" width="256" height="256" loading="lazy">
+            </div>
+            <p class="project-tag">Retail · Travel FREE</p>
+            <h3>Travel FREE CZ</h3>
+            <p class="project-meta">10/2018 – 04/2019 · Coordinator + MVVM</p>
+            <p>Věrnostní aplikace prodejen Travel FREE — digitální CLUBCARD s přehledem
+              nasbíraných bodů a kuponů, blokace i výměna karty přímo z telefonu, přehled
+              sortimentu a mapa poboček s otevírací dobou a kontakty. Jako jediný iOS
+              vývojář jsem se staral o údržbu a rozvoj aplikace. Spolupracoval jsem
+              s vlastníkem produktu.</p>
+            <ul class="chips">
+              <li>Swift 4/5</li><li>UIKit</li><li>Alamofire</li><li>Firebase</li><li>CocoaPods</li>
+              <li>XCTest</li>
+            </ul>
+            <p class="project-links">
+              <a href="https://apps.apple.com/cz/app/travel-free-cz/id974005416" target="_blank" rel="noopener">Travel FREE CZ</a>
+            </p>
+            <button class="card-more" type="button" data-dialog="p-travel-free">Detail projektu</button>
+          </article>
+
+          <article class="project-card" data-dialog="p-florbal">
+            <div class="project-thumb has-icon">
+              <img src="img/icon-florbal.jpg" alt="Ikona aplikace Český florbal" width="256" height="256" loading="lazy">
+            </div>
+            <p class="project-tag">Sport · T-Mobile CZ</p>
+            <h3>Český florbal</h3>
+            <p class="project-meta">10/2019 – 07/2021 · Coordinator + MVVM</p>
+            <p>Oficiální aplikace Českého florbalu — výsledky, program a statistiky
+              ze všech ligových i pohárových soutěží svazu včetně reprezentace, profily
+              týmů, hráčů i rozhodčích a videa z ceskyflorbal.tv. Jako jediný iOS
+              vývojář jsem udržoval aplikaci a přidával nové featury. Pracoval jsem
+              v týmu s grafikem a backend vývojářem. Aplikace díky CoreData poskytuje
+              výsledky a statistiky i offline. Přihlášený uživatel si volí oblíbené
+              soutěže, týmy a hráče a dostává k nim push notifikace. Verze, na které
+              jsem pracoval, už není v distribuci.</p>
+            <ul class="chips">
+              <li>Swift 5</li><li>UIKit</li><li>CoreData</li><li>Alamofire</li>
+              <li>Firebase</li><li>Fastlane</li><li>AppCenter</li>
+              <li>XCTest</li>
+            </ul>
+            <p class="project-links">
+              <a href="https://apptopia.com/unified/app/8080310954/about" target="_blank" rel="noopener">Záznam na Apptopia</a>
+            </p>
+            <button class="card-more" type="button" data-dialog="p-florbal">Detail projektu</button>
+          </article>
+
+          <article class="project-card" data-dialog="p-tesco-my">
+            <div class="project-thumb has-icon">
+              <span class="logo-tile" style="--logo-bg: #ffffff">
+                <img src="img/icon-tesco-my.png" alt="Logo Tesco" width="256" height="75" loading="lazy">
+              </span>
+            </div>
+            <p class="project-tag">E-commerce · Tesco Malaysia</p>
+            <h3>Tesco Online Malaysia</h3>
+            <p class="project-meta">05/2019 – 07/2021 · MVC</p>
+            <p>Zákaznická aplikace Tesco pro malajsijský trh — nákup potravin
+              s procházením kategorií, vyhledáváním s filtry, oblíbenými produkty
+              a akčními nabídkami. K tomu rezervace času doručení domů i vyzvednutí
+              na prodejně a úpravy objednávky až do uzávěrky. Jako jediný iOS vývojář
+              jsem udržoval zděděnou Objective-C codebase s UI v XIBech, přidával nové
+              featury a vydával všechny verze —
+              průběžně po celou dobu v adastře, souběžně s dalšími projekty. Pracoval jsem v týmu s grafikem
+              a backend vývojářem. Aplikace již dnes není v distribuci.</p>
+            <ul class="chips">
+              <li>Objective-C</li><li>UIKit</li><li>AFNetworking</li><li>JWT</li>
+              <li>RNCryptor</li><li>Pulse</li><li>Firebase</li><li>CocoaPods</li><li>AppCenter</li>
+              <li>XCTest</li>
+            </ul>
+            <p class="project-links">
+              <a href="https://apptopia.com/ios/app/890449798/about" target="_blank" rel="noopener">Záznam na Apptopia</a>
+            </p>
+            <button class="card-more" type="button" data-dialog="p-tesco-my">Detail projektu</button>
+          </article>
+
+          <article class="project-card" data-dialog="p-lotuss">
+            <div class="project-thumb has-icon">
+              <img src="img/icon-lotuss.jpg" alt="Ikona aplikace Tesco Lotus Thailand" width="256" height="256" loading="lazy">
+            </div>
+            <p class="project-tag">E-commerce · Tesco Lotus</p>
+            <h3>Tesco Lotus Thailand</h3>
+            <p class="project-meta">05/2019 – 07/2021 · MVC</p>
+            <p>Sesterská aplikace k malajsijskému Tescu, postavená pro thajský trh —
+              stejný nákupní model od katalogu po rezervaci času doručení, ale vlastní
+              codebase. Obě aplikace sdílely technologický základ, ne kód. Přihlašovalo
+              se skenem čárového kódu, košík a platba běžely ve webview. Jako jediný
+              iOS vývojář jsem udržoval zděděnou Objective-C codebase s UI v XIBech,
+              přidával nové featury a vydával všechny verze —
+              průběžně po celou dobu v adastře, souběžně s dalšími projekty. Pracoval jsem v týmu
+              s grafikem a backend vývojářem. Aplikace již dnes není v distribuci.</p>
+            <ul class="chips">
+              <li>Objective-C</li><li>UIKit</li><li>AFNetworking</li><li>JWT</li>
+              <li>RNCryptor</li><li>CocoaPods</li><li>Firebase</li><li>AppCenter</li>
+              <li>XCTest</li>
+            </ul>
+            <button class="card-more" type="button" data-dialog="p-lotuss">Detail projektu</button>
+          </article>
+
+          <article class="project-card" data-dialog="p-tesco-atc">
+            <div class="project-thumb has-icon">
+              <span class="logo-tile" style="--logo-bg: #ffffff">
+                <img src="img/icon-tesco-my.png" alt="Logo Tesco" width="256" height="75" loading="lazy">
+              </span>
+            </div>
+            <p class="project-tag">Interní nástroj · Tesco</p>
+            <h3>Tesco ATC</h3>
+            <p class="project-meta">10/2018 – 04/2019 · Coordinator + MVVM</p>
+            <p>Interní aplikace pro zaměstnance poboček Tesca — naplánované směny
+              a stav docházky přihlášeného zaměstnance. Lokalizovaná do čtyř jazyků
+              pro Polsko, Česko, Slovensko a Maďarsko a distribuovaná přes Enterprise
+              certifikát mimo App Store. Byl jsem jediný iOS vývojář projektu.
+              Spolupracoval jsem s vlastníkem produktu.</p>
+            <ul class="chips">
+              <li>Swift 4/5</li><li>UIKit</li><li>Alamofire</li><li>Firebase</li><li>CocoaPods</li>
+              <li>XCTest</li>
+            </ul>
+            <button class="card-more" type="button" data-dialog="p-tesco-atc">Detail projektu</button>
+          </article>
+
+          <article class="project-card" data-dialog="p-bidx1">
+            <div class="project-thumb has-icon">
+              <span class="logo-tile" style="--logo-bg: #224A93">
+                <img src="img/BidX1.png" alt="Logo BidX1" width="209" height="89" loading="lazy">
+              </span>
+            </div>
+            <p class="project-tag">PropTech · BidX1 Technology</p>
+            <h3>BidX1</h3>
+            <p class="project-meta">09/2019 – 11/2019 · MVVM</p>
+            <p>MVP digitálního tržiště s nemovitostmi — online aukce a správa nabídek
+              s řazením podle lokalit: Jižní Afrika, Irsko, Spojené království a Kypr.
+              Byl jsem jediný iOS vývojář projektu. Pracoval jsem v týmu s grafikem
+              a backend vývojářem. Rozhodnutím majitele se aplikace nikdy nedostala
+              do produkce.</p>
+            <ul class="chips">
+              <li>Swift 5</li><li>Combine</li><li>Moya</li>
+              <li>XCTest</li>
+            </ul>
+            <button class="card-more" type="button" data-dialog="p-bidx1">Detail projektu</button>
+          </article>
+
+          <article class="project-card" data-dialog="p-doprava">
+            <div class="project-thumb" data-initials="W"></div>
+            <p class="project-tag">Doprava · Freelance</p>
+            <h3>Dopravní aplikace</h3>
+            <p class="project-meta">04/2018 – 09/2018 · MVVM</p>
+            <p>MVP pro sledování pražské integrované dopravy — seznam nejbližších
+              spojů z pěti nejbližších zastávek, polohu určovaly Apple Watch. Hodinková
+              část zobrazovala spoje z nejbližší nebo vybrané zastávky. Dělal jsem
+              grafický návrh i implementaci, data dodával backend z veřejně dostupných
+              zdrojů. Kvůli obtížné dostupnosti dat zůstal projekt v šuplíku.</p>
+            <ul class="chips">
+              <li>Swift 4</li><li>watchOS</li><li>UIKit</li><li>URLSession</li><li>XCTest</li>      </ul>
+            <button class="card-more" type="button" data-dialog="p-doprava">Detail projektu</button>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="zkusenosti" class="experience">
+      <div class="wrap">
+        <h2>Zkušenosti<span class="dot">.</span></h2>
+
+        <ol class="timeline">
+
+          <li class="timeline-item">
+            <p class="timeline-date">06/2026 → dnes</p>
+            <h3>iOS Developer <span class="at">·</span> Vlastní aplikace</h3>
+            <p class="timeline-meta">Praha</p>
+            <p>Pracuju na několika vlastních aplikacích pro iPhone — od nápadu a návrhu
+              přes architekturu po vydání. Aplikace jsou teď v uzavřeném beta testu.</p>
+            <ul class="chips">
+              <li>Swift 6</li><li>SwiftUI</li>
+            </ul>
+          </li>
+
+          <li class="timeline-item">
+            <p class="timeline-date">08/2021 → 05/2026</p>
+            <h3>iOS Developer <span class="at">·</span> Heureka Group</h3>
+            <p class="timeline-meta">Praha · 4 roky 9 měsíců</p>
+            <p>Garant iOS aplikací Heureka.cz a Heureka.sk, jeden ze dvou kmenových iOS
+              vývojářů. Swift 6, CLEAN + MVI, Kotlin Multiplatform, iOS CI/CD a build server —
+              build ze 14 na 3 minuty.</p>
+            <ul class="chips">
+              <li>Swift 6</li><li>Swift Concurrency</li><li>SwiftUI</li><li>UIKit</li><li>Combine</li>
+              <li>Apollo/GraphQL</li><li>Kotlin Multiplatform</li><li>Jetpack Compose</li><li>Koin</li><li>Ktor</li>
+              <li>SPM</li><li>Factory</li>
+              <li>Firebase</li><li>GitLab CI</li><li>Fastlane</li>
+              <li>XCTest</li>
+            </ul>
+            <button class="card-more" type="button" data-dialog="p-heureka">Podrobnosti v detailu projektu</button>
+          </li>
+
+          <li class="timeline-item">
+            <p class="timeline-date">05/2019 → 07/2021</p>
+            <h3>iOS Developer <span class="at">·</span> adastra.one</h3>
+            <p class="timeline-meta">Praha · 2 roky 3 měsíce</p>
+            <p>Jako jediný iOS vývojář jsem převzal a dál rozvíjel Tesco Online Malaysia
+              a Tesco Lotus Thailand ve zděděném Objective-C nad MVC, Český florbal a šest
+              rozhlasových stanic ve Swiftu 5 nad Coordinator + MVVM — rádia jsem po analýze
+              od základu přepsal do jedné codebase. BidX1 jsem postavil od nuly jako MVP
+              nad MVVM.</p>
+            <ul class="chips">
+              <li>Swift 5</li><li>Objective-C</li><li>UIKit</li><li>Combine</li>
+              <li>CoreData</li><li>Moya</li><li>Alamofire</li><li>AFNetworking</li>
+              <li>AVAudioRecorder</li><li>Firebase</li><li>CocoaPods</li><li>Fastlane</li>
+              <li>XCTest</li>
+            </ul>
+          </li>
+
+          <li class="timeline-item">
+            <p class="timeline-date">10/2018 → 04/2019</p>
+            <h3>iOS Developer <span class="at">·</span> Unicorn a.s.</h3>
+            <p class="timeline-meta">Praha · 7 měsíců</p>
+            <p>Jako jediný iOS vývojář jsem dodával aplikace pro ŠKODA AUTO, Patria
+              Finance a Travel FREE a interní Tesco ATC pro pobočky v regionu PL/CZ/SK/HU,
+              distribuovaný přes Enterprise certifikát. Ve Swiftu 4 nad Coordinator
+              + MVVM, na konci s migrací na Swift 5.</p>
+            <ul class="chips">
+              <li>Swift 4/5</li><li>UIKit</li><li>Alamofire</li><li>Firebase</li>
+              <li>CocoaPods</li><li>XCTest</li>
+            </ul>
+          </li>
+
+          <li class="timeline-item">
+            <p class="timeline-date">04/2018 → 09/2018</p>
+            <h3>iOS &amp; watchOS Developer <span class="at">·</span> Freelance</h3>
+            <p class="timeline-meta">Praha · 6 měsíců</p>
+            <p>Dopravní aplikace pro iOS a watchOS — první samostatný projekt
+              po přechodu k vývoji.</p>
+            <ul class="chips">
+              <li>Swift 4</li><li>iOS</li><li>watchOS</li><li>UIKit</li>
+              <li>URLSession</li><li>XCTest</li>
+            </ul>
+          </li>
+
+        </ol>
+
+        <details class="prior-career">
+          <summary>Před iOS: 16 let grafiky, eventů a obchodu</summary>
+          <ul>
+            <li><strong>Freelance grafik</strong> (2004 → 2016) — vedlejší činnost: vizuály a promo
+              materiály pro hudební akce. Photoshop, Illustrator, Affinity Designer.</li>
+            <li><strong>Event manager, freelance</strong> (2000 → 2013) — vedlejší činnost: pořádání
+              hudebních večerů a festivalů s českými i zahraničními umělci.</li>
+            <li><strong>Majitel a manager, Sensation Factory iRadio</strong> (2010 → 2014) —
+              vedlejší činnost při zaměstnání: vedení týmu a provozu internetového rádia,
+              jednání s dodavateli obsahu.</li>
+            <li><strong>Project purchaser, BRK - stavební</strong> (2015) — příprava
+              a nákup při realizaci rezidenčního projektu o 33 bytových jednotkách.</li>
+            <li><strong>Trade officer, HOCHTIEF CZ</strong> (2006 → 2013) — rozpočty
+              a kompletace nabídek do velkých státních stavebních zakázek.</li>
+            <li><strong>Trade officer, AQUATEST</strong> (2004 → 2006) — příprava
+              a koordinace nabídek do velkých státních ekologických zakázek.</li>
+          </ul>
+        </details>
+      </div>
+    </section>
+
+    <section id="stack" class="stack">
+      <div class="wrap">
+        <h2>Tech stack<span class="dot">.</span></h2>
+        <div class="stack-grid">
+
+          <div class="stack-group">
+            <h3>Jazyky &amp; platformy</h3>
+            <ul class="chips">
+              <li>Swift 6</li>
+              <li>Swift Concurrency</li>
+              <li>Swift 5</li>
+              <li>Swift 4</li>
+              <li>Kotlin Multiplatform</li>
+              <li>Kotlin</li>
+              <li>iOS</li>
+              <li>watchOS</li>
+              <li>Objective-C</li>
+            </ul>
+          </div>
+
+          <div class="stack-group">
+            <h3>Architektura</h3>
+            <ul class="chips">
+              <li>CLEAN</li>
+              <li>MVI + FlowController</li>
+              <li>Coordinator + MVVM</li>
+              <li>MVP</li>
+              <li>Factory (DI)</li>
+              <li>Koin (DI)</li>
+              <li>MVC</li>
+            </ul>
+          </div>
+
+          <div class="stack-group">
+            <h3>UI &amp; frameworky</h3>
+            <ul class="chips">
+              <li>SwiftUI</li>
+              <li>UIKit</li>
+              <li>Jetpack Compose</li>
+              <li>Combine</li>
+              <li>AVAudioRecorder</li>
+              <li>Moko-resources</li>
+              <li>XIB</li>
+            </ul>
+          </div>
+
+          <div class="stack-group">
+            <h3>Data &amp; síť</h3>
+            <ul class="chips">
+              <li>Apollo/GraphQL</li>
+              <li>Ktor</li>
+              <li>URLSession</li>
+              <li>Alamofire</li>
+              <li>CoreData</li>
+              <li>JWT</li>
+              <li>Moya</li>
+              <li>RNCryptor</li>
+              <li>AFNetworking</li>
+            </ul>
+          </div>
+
+          <div class="stack-group">
+            <h3>Nástroje &amp; CI</h3>
+            <ul class="chips">
+              <li>GitLab CI</li>
+              <li>Fastlane</li>
+              <li>Claude Code</li>
+              <li>XCTest</li>
+              <li>TestFlight</li>
+              <li>SPM</li>
+              <li>Shell skripty</li>
+              <li>Pulse</li>
+              <li>AppCenter</li>
+              <li>CocoaPods</li>
+              <li>Git</li>
+            </ul>
+          </div>
+
+          <div class="stack-group">
+            <h3>Analytika &amp; nástroje</h3>
+            <ul class="chips">
+              <li>Firebase</li>
+              <li>AppsFlyer</li>
+              <li>Meiro</li>
+              <li>Didomi</li>
+              <li>Figma</li>
+              <li>Affinity Designer</li>
+              <li>Illustrator</li>
+              <li>Photoshop</li>
+              <li>Jira</li>
+              <li>Poeditor</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="o-mne" class="about">
+      <div class="wrap">
+        <h2>O mně<span class="dot">.</span></h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              K iOS vývoji jsem se dostal oklikou. Šestnáct let jsem dělal grafiku,
+              pořádal hudební akce a připravoval nabídky do velkých státních zakázek — pak jsem si
+              v roce 2018 dodělal bakaláře na Unicorn College a začal programovat
+              naplno. Ta cesta se pořád vyplácí: vím, jak vypadá projekt z druhé
+              strany stolu, a s designérem i produkťákem si rozumím.
+            </p>
+            <p>
+              Dnes mě kromě programování baví i architektura, která drží pohromadě
+              i po letech. Rád zkoumám sdílení logiky mezi iOS a Androidem přes
+              Kotlin Multiplatform nebo si hraji s AI. Píšu testovatelný kód
+              a automatizuju to, co bych jinak dělal podruhé ručně.
+            </p>
+          </div>
+          <aside class="about-side">
+            <h3>Vzdělání</h3>
+            <p><strong>Unicorn College</strong><br>
+              Bc., Informační technologie<br>
+              <span class="muted">2014 – 2018</span></p>
+            <p><strong>SPŠ strojní</strong><br>
+              Maturita</p>
+            <h3>Jazyky</h3>
+            <p>Čeština — rodilý mluvčí<br>
+              Angličtina — profesionální úroveň</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section id="kontakt" class="contact">
+      <div class="wrap">
+        <p class="eyebrow">Kontakt</p>
+        <h2>Ozvěte se<span class="dot">.</span></h2>
+        <p class="contact-lead">
+          Hledám iOS role v Praze i remote, včetně projektů s Kotlin Multiplatform.
+          Ozvěte se, rád si popovídám o projektu.
+        </p>
+        <p class="contact-mail">
+          <a class="js-mail" href="#kontakt" data-user="miroslav.tourek+web" data-domain="gmail.com">miroslav.tourek+web <span class="at-word">zavináč</span> gmail.com</a>
+        </p>
+        <div class="socials">
+          <a href="https://www.linkedin.com/in/miroslav-t-97759159" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com/Carrione" target="_blank" rel="noopener">GitHub</a>
+          <a href="Miroslav_Tourek_CV.pdf" download>Stáhnout CV (PDF)</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <dialog id="p-heureka" class="project-dialog" tabindex="-1" autofocus aria-labelledby="p-heureka-t">
+    <button class="dialog-close" type="button" aria-label="Zavřít detail">&times;</button>
+    <p class="project-tag">E-commerce · Heureka Group</p>
+    <h3 id="p-heureka-t">Heureka.cz &amp; Heureka.sk</h3>
+    <p class="project-meta">08/2021 – 05/2026 · iOS Developer</p>
+    <div class="gallery-strip">
+      <button class="shot" type="button" data-full="img/shot-heureka-1-lg.jpg" data-caption="Heureka — domovská obrazovka" aria-label="Zvětšit: Heureka — domovská obrazovka">
+        <img src="img/shot-heureka-1.jpg" alt="Heureka — domovská obrazovka" width="392" height="852" loading="lazy">
+      </button>
+      <button class="shot" type="button" data-full="img/shot-heureka-2-lg.jpg" data-caption="Heureka — výpis kategorie a filtry" aria-label="Zvětšit: Heureka — výpis kategorie a filtry">
+        <img src="img/shot-heureka-2.jpg" alt="Heureka — výpis kategorie a filtry" width="392" height="852" loading="lazy">
+      </button>
+      <button class="shot" type="button" data-full="img/shot-heureka-3-lg.jpg" data-caption="Heureka — detail produktu" aria-label="Zvětšit: Heureka — detail produktu">
+        <img src="img/shot-heureka-3.jpg" alt="Heureka — detail produktu" width="392" height="852" loading="lazy">
+      </button>
+      <button class="shot" type="button" data-full="img/shot-heureka-4-lg.jpg" data-caption="Heureka — nabídky obchodů" aria-label="Zvětšit: Heureka — nabídky obchodů">
+        <img src="img/shot-heureka-4.jpg" alt="Heureka — nabídky obchodů" width="392" height="852" loading="lazy">
+      </button>
+      <button class="shot" type="button" data-full="img/shot-heureka-5-lg.jpg" data-caption="Heureka — podobné produkty" aria-label="Zvětšit: Heureka — podobné produkty">
+        <img src="img/shot-heureka-5.jpg" alt="Heureka — podobné produkty" width="392" height="852" loading="lazy">
+      </button>
+      <button class="shot" type="button" data-full="img/shot-heureka-6-lg.jpg" data-caption="Heureka — recenze produktu" aria-label="Zvětšit: Heureka — recenze produktu">
+        <img src="img/shot-heureka-6.jpg" alt="Heureka — recenze produktu" width="392" height="852" loading="lazy">
+      </button>
+      <button class="shot" type="button" data-full="img/shot-heureka-7-lg.jpg" data-caption="Heureka — AI shrnutí recenzí" aria-label="Zvětšit: Heureka — AI shrnutí recenzí">
+        <img src="img/shot-heureka-7.jpg" alt="Heureka — AI shrnutí recenzí" width="392" height="852" loading="lazy">
+      </button>
+      <button class="shot" type="button" data-full="img/shot-heureka-8-lg.jpg" data-caption="Heureka — vývoj ceny" aria-label="Zvětšit: Heureka — vývoj ceny">
+        <img src="img/shot-heureka-8.jpg" alt="Heureka — vývoj ceny" width="392" height="852" loading="lazy">
+      </button>
+      <button class="shot" type="button" data-full="img/shot-heureka-9-lg.jpg" data-caption="Heureka — poradna u produktu" aria-label="Zvětšit: Heureka — poradna u produktu">
+        <img src="img/shot-heureka-9.jpg" alt="Heureka — poradna u produktu" width="392" height="852" loading="lazy">
+      </button>
+      <button class="shot" type="button" data-full="img/shot-heureka-10-lg.jpg" data-caption="Heureka — poradna a dotazy" aria-label="Zvětšit: Heureka — poradna a dotazy">
+        <img src="img/shot-heureka-10.jpg" alt="Heureka — poradna a dotazy" width="392" height="852" loading="lazy">
+      </button>
+      <button class="shot" type="button" data-full="img/shot-heureka-11-lg.jpg" data-caption="Heureka — detail dotazu" aria-label="Zvětšit: Heureka — detail dotazu">
+        <img src="img/shot-heureka-11.jpg" alt="Heureka — detail dotazu" width="392" height="852" loading="lazy">
+      </button>
+      <button class="shot" type="button" data-full="img/shot-heureka-12-lg.jpg" data-caption="Heureka — porovnání produktů" aria-label="Zvětšit: Heureka — porovnání produktů">
+        <img src="img/shot-heureka-12.jpg" alt="Heureka — porovnání produktů" width="392" height="852" loading="lazy">
+      </button>
+      <button class="shot" type="button" data-full="img/shot-heureka-13-lg.jpg" data-caption="Heureka — oblíbené" aria-label="Zvětšit: Heureka — oblíbené">
+        <img src="img/shot-heureka-13.jpg" alt="Heureka — oblíbené" width="392" height="852" loading="lazy">
+      </button>
+      <button class="shot" type="button" data-full="img/shot-heureka-14-lg.jpg" data-caption="Heureka — skenování čárového kódu" aria-label="Zvětšit: Heureka — skenování čárového kódu">
+        <img src="img/shot-heureka-14.jpg" alt="Heureka — skenování čárového kódu" width="392" height="852" loading="lazy">
+      </button>
+      <button class="shot" type="button" data-full="img/shot-heureka-15-lg.jpg" data-caption="Heureka — historie skenování" aria-label="Zvětšit: Heureka — historie skenování">
+        <img src="img/shot-heureka-15.jpg" alt="Heureka — historie skenování" width="392" height="852" loading="lazy">
+      </button>
+      <button class="shot" type="button" data-full="img/shot-heureka-16-lg.jpg" data-caption="Heureka — AI nákupní rádce" aria-label="Zvětšit: Heureka — AI nákupní rádce">
+        <img src="img/shot-heureka-16.jpg" alt="Heureka — AI nákupní rádce" width="392" height="852" loading="lazy">
+      </button>
+      <button class="shot" type="button" data-full="img/shot-heureka-17-lg.jpg" data-caption="Heureka — AI nákupní rádce — výsledek" aria-label="Zvětšit: Heureka — AI nákupní rádce — výsledek">
+        <img src="img/shot-heureka-17.jpg" alt="Heureka — AI nákupní rádce — výsledek" width="392" height="852" loading="lazy">
+      </button>
+      <button class="shot" type="button" data-full="img/shot-heureka-18-lg.jpg" data-caption="Heureka — limitovaná nabídka" aria-label="Zvětšit: Heureka — limitovaná nabídka">
+        <img src="img/shot-heureka-18.jpg" alt="Heureka — limitovaná nabídka" width="392" height="852" loading="lazy">
+      </button>
+      <button class="shot" type="button" data-full="img/shot-heureka-19-lg.jpg" data-caption="Heureka — historie hledání" aria-label="Zvětšit: Heureka — historie hledání">
+        <img src="img/shot-heureka-19.jpg" alt="Heureka — historie hledání" width="392" height="852" loading="lazy">
+      </button>
+      <button class="shot" type="button" data-full="img/shot-heureka-20-lg.jpg" data-caption="Heureka — vyhledávání a našeptávač" aria-label="Zvětšit: Heureka — vyhledávání a našeptávač">
+        <img src="img/shot-heureka-20.jpg" alt="Heureka — vyhledávání a našeptávač" width="392" height="852" loading="lazy">
+      </button>
+      <button class="shot" type="button" data-full="img/shot-heureka-21-lg.jpg" data-caption="Heureka — detail nabídky obchodu" aria-label="Zvětšit: Heureka — detail nabídky obchodu">
+        <img src="img/shot-heureka-21.jpg" alt="Heureka — detail nabídky obchodu" width="392" height="852" loading="lazy">
+      </button>
+      <button class="shot" type="button" data-full="img/shot-heureka-22-lg.jpg" data-caption="Heureka — výdejní místa" aria-label="Zvětšit: Heureka — výdejní místa">
+        <img src="img/shot-heureka-22.jpg" alt="Heureka — výdejní místa" width="392" height="852" loading="lazy">
+      </button>
+      <button class="shot" type="button" data-full="img/shot-heureka-23-lg.jpg" data-caption="Heureka — výběr místa doručení" aria-label="Zvětšit: Heureka — výběr místa doručení">
+        <img src="img/shot-heureka-23.jpg" alt="Heureka — výběr místa doručení" width="392" height="852" loading="lazy">
+      </button>
+      <button class="shot" type="button" data-full="img/shot-heureka-24-lg.jpg" data-caption="Heureka — přidání do košíku" aria-label="Zvětšit: Heureka — přidání do košíku">
+        <img src="img/shot-heureka-24.jpg" alt="Heureka — přidání do košíku" width="392" height="852" loading="lazy">
+      </button>
+    </div>
+    <p class="project-links">
+      <a href="https://apps.apple.com/cz/app/heureka-cz-srovnávač-cen/id436106975" target="_blank" rel="noopener">Heureka.cz</a>
+      <a href="https://apps.apple.com/cz/app/heureka-sk-porovnávač-cien/id6465955488" target="_blank" rel="noopener">Heureka.sk</a>
+    </p>
+    <p class="dialog-lead">Když jsem do týmu nastupoval, byly iOS a Android samostatné aplikace
+      s vlastní logikou. Byl jsem jeden ze dvou kmenových iOS vývojářů, spolu s 2–3 vývojáři
+      z agentury. Během mého působení padlo rozhodnutí jít multiplatformně — technologii
+      Kotlin Multiplatform přinesla spolupracující agentura — a většina featur se do KMP
+      převedla: sdílená doménová a datová vrstva a vedle nativních view modelů i view modely
+      sdílené pro iOS i Android. UI zůstalo nativní, na iOS ve SwiftUI a UIKitu. Z jedné
+      codebase tak vznikají čtyři aplikace — Heureka.cz a Heureka.sk pro iOS i Android.</p>
+    <h4>Můj přínos</h4>
+    <p class="dialog-lead">Po celou dobu jsem průběžně vyvíjel nové featury i úpravy
+      stávajících podle zadání produktu — od analýzy požadavku a návrhu řešení přes
+      implementaci s testy až po vydání do TestFlightu a App Storu. K tomu code review
+      a testování buildů ostatních vývojářů. Z toho vybírám:</p>
+    <p class="dialog-lead"><strong>Kotlin Multiplatform</strong> — iOS UI jsem napojoval
+      na sdílenou vrstvu, části kódu přepisoval do sdíleného Kotlinu a přispíval do UI
+      Androidu (Jetpack Compose). Jako odpovědný za iOS aplikaci jsem otestoval a schválil
+      nasazení KMP verze do produkce.</p>
+    <p class="dialog-lead"><strong>Swift 6</strong> — vedl jsem přechod aplikací na Swift 6
+      a strict concurrency: async/await a aktory napříč codebase, Sendable a izolace
+      na @MainActor.</p>
+    <p class="dialog-lead"><strong>CI/CD a build server</strong> — jako jediný odpovědný
+      člověk jsem převzal iOS CI/CD na GitLab CI, Fastlane a shell skriptech i build server
+      a během let je několikrát přestavěl — testy, předprodukční i produkční buildy
+      a distribuce do TestFlightu i App Storu. Build aplikace se sdíleným KMP kódem jsem
+      zkrátil ze 14 na 3 minuty. Build server jsme přesunuli na MacStadium a po analýze
+      nákladů zpět na vlastní hardware, který se zaplatil za rok a data jsme měli plně
+      pod vlastní kontrolou.</p>
+    <p class="dialog-lead"><strong>AI code review</strong> — do CI/CD jsem integroval AI code
+      review postavené na Claude Code. Výsledkem je komentář k merge requestům — a s ním
+      soustavnější kontrola dopadu změn na bezpečnost kódu.</p>
+    <p class="dialog-lead"><strong>Porovnávání produktů</strong> — funkci jsem navrhl
+      a implementoval od návrhu řešení po vydání (viz screenshot „porovnání produktů“
+      v galerii výše). Později jsem přepracoval i vzhled a fungování detailu produktu.</p>
+    <p class="dialog-lead"><strong>Modernizace codebase</strong> — nejdřív jsem z views
+      vyčistil prezentační logiku a řízení stavu, pak je přepsal do SwiftUI (navigace
+      zůstala v UIKitu). Vybrané featury jsem převedl z REST API na GraphQL, zavedl
+      lokální SPM balíčky a do aplikací jsem zavedl Liquid Glass.</p>
+    <p class="dialog-lead"><strong>Nákup přímo z aplikace</strong> — napojil jsem aplikace
+      na webový košík Heureky — košík běží ve webview přímo v aplikaci, takže uživatel
+      nakoupí, aniž by ji opustil.</p>
+    <h4>Co aplikace umí</h4>
+    <p class="dialog-lead">Aplikace sledují přes 55 tisíc e-shopů včetně známých obchodů jako
+      Alza, Datart, Allegro, Notino nebo Pilulka a dohromady nabízejí miliony produktů — nejen
+      k porovnání, ale i k nákupu přímo v aplikaci nebo na vybraném e-shopu.</p>
+    <ul class="dialog-list">
+      <li><strong>Vyhledávání</strong> — pokročilý vyhledávač, skenování čárových kódů a historie
+        obojího</li>
+      <li><strong>Práce s produkty</strong> — ukládání do oblíbených a vzájemné porovnávání</li>
+      <li><strong>AI nákupní rádce</strong> — doporučení produktů podle zadání uživatele</li>
+      <li><strong>Prodejní akce</strong> — časově limitované nabídky</li>
+      <li><strong>Hodnocení</strong> — recenze produktů i e-shopů</li>
+      <li><strong>Poradna</strong> — dotazy k produktům včetně odpovědí od e-shopů a archivu
+        dotazů ostatních zákazníků včetně odpovědí</li>
+    </ul>
+    <h4>Architektura — CLEAN</h4>
+    <ul class="dialog-list">
+      <li><strong>Prezentační vrstva</strong> — MVI s FlowControllery; vedle
+        nativních view modelů i view modely sdílené v KMP</li>
+      <li><strong>Doménová vrstva</strong> — repository protokoly, use cases, doménová logika a modely</li>
+      <li><strong>Datová vrstva</strong> — implementace repositories, data providers, datové modely</li>
+    </ul>
+    <p class="dialog-note">Architekturu jsme navrhli s externí firmou, já hlídal její dodržování
+      v code review. Předtím jsem v prezentační vrstvě zavedl MVP.</p>
+    <h4>Technologie</h4>
+    <ul class="chips">
+      <li>Swift 6</li><li>Swift Concurrency</li><li>SwiftUI</li><li>UIKit</li><li>Combine</li><li>SPM</li>
+      <li>Kotlin Multiplatform</li><li>Jetpack Compose</li><li>Koin</li><li>Ktor</li><li>Factory</li><li>Apollo/GraphQL</li>
+      <li>Firebase</li><li>AppsFlyer</li><li>Didomi</li><li>Meiro</li>
+      <li>Poeditor</li><li>Moko-resources</li><li>TestFlight</li>
+      <li>Figma</li><li>Jira</li>
+      <li>XCTest</li>
+    </ul>
+    <p class="dialog-note">Firebase v rozsahu remote config, Crashlytics, A/B testy a messaging.</p>
+    <p class="dialog-note">Podklady od designérů ve Figmě, plánování a issue tracking v Jiře.</p>
+    <h4>CI/CD</h4>
+    <ul class="chips"><li>GitLab CI</li><li>Fastlane</li><li>Shell skripty</li><li>Claude Code</li></ul>
+  </dialog>
+
+  <dialog id="p-lotuss" class="project-dialog" tabindex="-1" autofocus aria-labelledby="p-lotuss-t">
+    <button class="dialog-close" type="button" aria-label="Zavřít detail">&times;</button>
+    <p class="project-tag">E-commerce · Tesco Lotus · adastra.one</p>
+    <h3 id="p-lotuss-t">Tesco Lotus Thailand</h3>
+    <p class="project-meta">05/2019 – 07/2021 · iOS Developer</p>
+    <p class="dialog-lead">Zákaznická aplikace řetězce Tesco Lotus pro thajský trh —
+      katalog, vyhledávání s filtry, oblíbené produkty, akční nabídky, rezervace času
+      doručení domů i vyzvednutí na prodejně a úpravy objednávky až do uzávěrky.
+      Přihlášení řešilo skenování čárového kódu, košík a platba běžely ve webview.</p>
+    <p class="dialog-lead">Byl jsem jediný iOS vývojář aplikace, v týmu s grafikem
+      a backend vývojářem. Udržoval jsem rozsáhlou zděděnou Objective-C codebase s UI
+      v XIBech, implementoval do ní nové featury a vydával všechny verze. Aplikace již dnes
+      není v distribuci.</p>
+    <h4>Architektura</h4>
+    <ul class="dialog-list"><li>MVC</li></ul>
+    <h4>Technologie</h4>
+    <ul class="chips">
+      <li>Objective-C</li><li>XIB</li><li>UIKit</li><li>CocoaPods</li>
+      <li>AFNetworking</li><li>JWT</li><li>RNCryptor</li><li>Pulse</li>
+      <li>Firebase</li><li>AppCenter</li>
+      <li>XCTest</li>
+    </ul>
+    <p class="dialog-note">Autentizace na JSON Web Tokenech, citlivá data v lokálním
+      úložišti šifrovaná přes RNCryptor.</p>
+  </dialog>
+
+  <dialog id="p-tesco-my" class="project-dialog" tabindex="-1" autofocus aria-labelledby="p-tesco-my-t">
+    <button class="dialog-close" type="button" aria-label="Zavřít detail">&times;</button>
+    <p class="project-tag">E-commerce · Tesco Malaysia · adastra.one</p>
+    <h3 id="p-tesco-my-t">Tesco Online Malaysia</h3>
+    <p class="project-meta">05/2019 – 07/2021 · iOS Developer</p>
+    <div class="gallery-strip">
+      <button class="shot" type="button" data-full="img/shot-tesco-malaysia-1.png" data-caption="Tesco Online Malaysia — domovská obrazovka a rezervace slotu" aria-label="Zvětšit: Tesco Online Malaysia — domovská obrazovka a rezervace slotu">
+        <img src="img/shot-tesco-malaysia-1-sm.jpg" alt="Tesco Online Malaysia — domovská obrazovka a rezervace slotu" width="392" height="844" loading="lazy">
+      </button>
+      <button class="shot" type="button" data-full="img/shot-tesco-malaysia-2.png" data-caption="Tesco Online Malaysia — vyhledávání produktů" aria-label="Zvětšit: Tesco Online Malaysia — vyhledávání produktů">
+        <img src="img/shot-tesco-malaysia-2-sm.jpg" alt="Tesco Online Malaysia — vyhledávání produktů" width="392" height="854" loading="lazy">
+      </button>
+      <button class="shot" type="button" data-full="img/shot-tesco-malaysia-3.png" data-caption="Tesco Online Malaysia — oblíbené produkty" aria-label="Zvětšit: Tesco Online Malaysia — oblíbené produkty">
+        <img src="img/shot-tesco-malaysia-3-sm.jpg" alt="Tesco Online Malaysia — oblíbené produkty" width="392" height="852" loading="lazy">
+      </button>
+      <button class="shot" type="button" data-full="img/shot-tesco-malaysia-4.png" data-caption="Tesco Online Malaysia — akční nabídky v kategorii" aria-label="Zvětšit: Tesco Online Malaysia — akční nabídky v kategorii">
+        <img src="img/shot-tesco-malaysia-4-sm.jpg" alt="Tesco Online Malaysia — akční nabídky v kategorii" width="392" height="842" loading="lazy">
+      </button>
+      <button class="shot" type="button" data-full="img/shot-tesco-malaysia-5.png" data-caption="Tesco Online Malaysia — výběr času doručení" aria-label="Zvětšit: Tesco Online Malaysia — výběr času doručení">
+        <img src="img/shot-tesco-malaysia-5-sm.jpg" alt="Tesco Online Malaysia — výběr času doručení" width="392" height="838" loading="lazy">
+      </button>
+      <button class="shot" type="button" data-full="img/shot-tesco-malaysia-6.png" data-caption="Tesco Online Malaysia — úprava objednávky" aria-label="Zvětšit: Tesco Online Malaysia — úprava objednávky">
+        <img src="img/shot-tesco-malaysia-6-sm.jpg" alt="Tesco Online Malaysia — úprava objednávky" width="392" height="846" loading="lazy">
+      </button>
+    </div>
+    <p class="project-links">
+      <a href="https://apptopia.com/ios/app/890449798/about" target="_blank" rel="noopener">Záznam na Apptopia</a>
+    </p>
+    <p class="dialog-lead">Zákaznická aplikace Tesco pro malajsijský trh — katalog,
+      vyhledávání s filtry, oblíbené produkty, rezervace časového okna pro doručení domů
+      i vyzvednutí na prodejně a úpravy objednávky až do uzávěrky.</p>
+    <p class="dialog-lead">Zcela samostatný projekt s vlastní codebase — se sesterskou
+      thajskou aplikací sdílel technologický základ, ne kód. Byl jsem jediný iOS vývojář
+      aplikace, v týmu s grafikem a backend vývojářem. Udržoval jsem zděděnou Objective-C
+      codebase a implementoval do ní nové featury. Aplikace již dnes není v distribuci.</p>
+    <h4>Architektura</h4>
+    <ul class="dialog-list"><li>MVC</li></ul>
+    <h4>Technologie</h4>
+    <ul class="chips">
+      <li>Objective-C</li><li>XIB</li><li>UIKit</li><li>CocoaPods</li>
+      <li>AFNetworking</li><li>JWT</li><li>RNCryptor</li><li>Pulse</li>
+      <li>Firebase</li><li>AppCenter</li>
+      <li>XCTest</li>
+    </ul>
+  </dialog>
+
+  <dialog id="p-florbal" class="project-dialog" tabindex="-1" autofocus aria-labelledby="p-florbal-t">
+    <button class="dialog-close" type="button" aria-label="Zavřít detail">&times;</button>
+    <p class="project-tag">Sport · T-Mobile CZ · adastra.one</p>
+    <h3 id="p-florbal-t">Český florbal</h3>
+    <p class="project-meta">10/2019 – 07/2021 · iOS Developer</p>
+    <div class="gallery-strip">
+      <button class="shot" type="button" data-full="img/shot-cesky-florbal-1.png" data-caption="Český florbal — boční menu s navigací" aria-label="Zvětšit: Český florbal — boční menu s navigací">
+        <img src="img/shot-cesky-florbal-1-sm.jpg" alt="Český florbal — boční menu s navigací" width="392" height="842" loading="lazy">
+      </button>
+      <button class="shot" type="button" data-full="img/shot-cesky-florbal-2.png" data-caption="Český florbal — Můj přehled s oblíbenými soutěžemi, družstvy a hráči" aria-label="Zvětšit: Český florbal — Můj přehled s oblíbenými soutěžemi, družstvy a hráči">
+        <img src="img/shot-cesky-florbal-2-sm.jpg" alt="Český florbal — Můj přehled s oblíbenými soutěžemi, družstvy a hráči" width="392" height="847" loading="lazy">
+      </button>
+      <button class="shot" type="button" data-full="img/shot-cesky-florbal-3.png" data-caption="Český florbal — zpravodajství" aria-label="Zvětšit: Český florbal — zpravodajství">
+        <img src="img/shot-cesky-florbal-3-sm.jpg" alt="Český florbal — zpravodajství" width="392" height="842" loading="lazy">
+      </button>
+      <button class="shot" type="button" data-full="img/shot-cesky-florbal-4.png" data-caption="Český florbal — tabulka Superligy" aria-label="Zvětšit: Český florbal — tabulka Superligy">
+        <img src="img/shot-cesky-florbal-4-sm.jpg" alt="Český florbal — tabulka Superligy" width="392" height="844" loading="lazy">
+      </button>
+    </div>
+    <p class="project-links">
+      <a href="https://apptopia.com/unified/app/8080310954/about" target="_blank" rel="noopener">Záznam na Apptopia</a>
+    </p>
+    <p class="dialog-lead">Oficiální aplikace Českého florbalu — výsledkový servis ze
+      všech ligových i pohárových soutěží, které svaz organizuje, i z mezinárodních
+      soutěží, které zpracovává — reprezentačních zápasů a Poháru mistrů.</p>
+    <p class="dialog-lead">Byl jsem jediný iOS vývojář aplikace, v týmu s grafikem
+      a backend vývojářem. Staral jsem se o údržbu a implementoval nové featury.
+      Verze, na které jsem pracoval, už není v distribuci.</p>
+    <h4>Co aplikace umí</h4>
+    <ul class="dialog-list">
+      <li><strong>Výsledky a program</strong> — tabulky, výsledky a rozpisy zápasů,
+        detail zápasu s navigací na místo konání</li>
+      <li><strong>Statistiky</strong> — profily týmů, hráčů i rozhodčích, filtry
+        a přepínání sezón až do roku 2008</li>
+      <li><strong>Personalizace</strong> — oblíbené soutěže, týmy a hráči po přihlášení,
+        push notifikace k nim i k vybraným zápasům</li>
+      <li><strong>Obsah</strong> — zpravodajství z elitních soutěží a reprezentace, feed
+        z ceskyflorbal.tv s přehráváním videí přímo v aplikaci</li>
+      <li><strong>Offline režim</strong> — výsledky a statistiky se ukládají do CoreData
+        a zůstávají dostupné i bez připojení</li>
+    </ul>
+    <h4>Architektura</h4>
+    <ul class="dialog-list"><li>Coordinator + MVVM</li></ul>
+    <h4>Technologie</h4>
+    <ul class="chips">
+      <li>Swift 5</li><li>UIKit</li><li>XIB</li><li>CoreData</li>
+      <li>Alamofire</li><li>CocoaPods</li><li>Firebase</li><li>AppCenter</li>
+      <li>XCTest</li>
+    </ul>
+    <h4>Automatizace</h4>
+    <ul class="chips"><li>Fastlane</li><li>Shell skripty</li></ul>
+  </dialog>
+
+  <dialog id="p-radia" class="project-dialog" tabindex="-1" autofocus aria-labelledby="p-radia-t">
+    <button class="dialog-close" type="button" aria-label="Zavřít detail">&times;</button>
+    <p class="project-tag">Média · MEDIA CLUB · adastra.one</p>
+    <h3 id="p-radia-t">Radio Kiss, Beat, Radio 1, Spin, Country a Signál</h3>
+    <p class="project-meta">11/2019 – 03/2020 · iOS Developer</p>
+    <p class="dialog-lead">Každá aplikace nabízela přehrávač živého vysílání, novinky
+      stanice, denní program, profily moderátorů a kontakt na redakci. U vybraných stanic
+      šlo nahrát a odeslat do rádia i zvukový vzkaz.</p>
+    <p class="dialog-lead">Zděděnou codebase jsem rozdělil na šest produktů — každá aplikace
+      měla vlastní target, scheme a asset katalog, takže sdílený kód zůstal jediný a lišily
+      se jen grafika, obsah a část funkcí. Celou šestici jsem dodal za pět měsíců.
+      Byl jsem jediný iOS vývojář projektu, v týmu s grafikem a backend vývojářem.</p>
+    <h4>Architektura</h4>
+    <ul class="dialog-list"><li>Coordinator + MVVM</li></ul>
+    <h4>Technologie</h4>
+    <ul class="chips">
+      <li>Swift 5</li><li>UIKit</li><li>CocoaPods</li>
+      <li>AVAudioRecorder</li><li>Alamofire</li><li>Firebase</li><li>TestFlight</li>
+      <li>XCTest</li>
+    </ul>
+    <h4>Aplikace</h4>
+    <div class="app-row">
+      <a href="https://apps.apple.com/cz/app/radio-kiss/id967217746" target="_blank" rel="noopener">
+        <img src="img/icon-radio-kiss.jpg" alt="" width="256" height="256" loading="lazy"><span>Kiss</span></a>
+      <a href="https://apps.apple.com/cz/app/radio-beat/id979842840" target="_blank" rel="noopener">
+        <img src="img/icon-radio-beat.jpg" alt="" width="256" height="256" loading="lazy"><span>Beat</span></a>
+      <a href="https://apps.apple.com/cz/app/radio-1/id960300605" target="_blank" rel="noopener">
+        <img src="img/icon-radio-1.jpg" alt="" width="256" height="256" loading="lazy"><span>Radio 1</span></a>
+      <a href="https://apps.apple.com/cz/app/spin-radio/id967919477" target="_blank" rel="noopener">
+        <img src="img/icon-spin-radio.jpg" alt="" width="256" height="256" loading="lazy"><span>Spin</span></a>
+      <a href="https://apps.apple.com/cz/app/country-radio/id967927472" target="_blank" rel="noopener">
+        <img src="img/icon-country-radio.jpg" alt="" width="256" height="256" loading="lazy"><span>Country</span></a>
+      <a href="https://apps.apple.com/cz/app/signál-rádio/id979498633" target="_blank" rel="noopener">
+        <img src="img/icon-signal-radio.jpg" alt="" width="256" height="256" loading="lazy"><span>Signál</span></a>
+    </div>
+  </dialog>
+
+  <dialog id="p-skoda" class="project-dialog" tabindex="-1" autofocus aria-labelledby="p-skoda-t">
+    <button class="dialog-close" type="button" aria-label="Zavřít detail">&times;</button>
+    <p class="project-tag">Automotive · ŠKODA AUTO · Unicorn a.s.</p>
+    <h3 id="p-skoda-t">ŠKODA Portable Check-In</h3>
+    <p class="project-meta">10/2018 – 04/2019 · iOS Developer</p>
+    <p class="dialog-lead">Interaktivní vícestránkový formulář pro předávku vozu mezi
+      distributorem ŠKODA AUTO a zákazníkem. Dodal jsem čtyři samostatné aplikace — verzi
+      v2.2 a následně v3, obě ve variantách FULL a LITE. Aplikace již dnes nejsou v distribuci.</p>
+    <p class="dialog-lead">Byl jsem jediný iOS vývojář projektu. Pracoval jsem podle
+      dokumentace k API a grafické úpravy jsem konzultoval s vlastníkem produktu, který
+      zadání ladil se zástupcem klienta.</p>
+    <h4>Jak formulář fungoval</h4>
+    <ul class="dialog-list">
+      <li><strong>Načtení podle VIN</strong> — údaje o vozidle i dříve pořízené fotografie
+        se stáhly ze serveru</li>
+      <li><strong>Fotodokumentace</strong> — nové snímky se pořizovaly fotoaparátem přímo
+        v aplikaci a šlo je i mazat</li>
+      <li><strong>Podpis</strong> — na konci shrnutí celého zápisu a podpis předávajícího
+        i přebírajícího</li>
+      <li><strong>Offline režim</strong> — data se ukládala lokálně i odesílala na server,
+        protože v místě předávky bývalo připojení nestabilní nebo žádné</li>
+      <li><strong>Dvě edice</strong> — verze FULL pracovala s fotografiemi, LITE bez nich</li>
+    </ul>
+    <h4>Architektura</h4>
+    <ul class="dialog-list"><li>Coordinator + MVVM</li></ul>
+    <h4>Technologie</h4>
+    <ul class="chips">
+      <li>Swift 4/5</li><li>UIKit</li><li>Alamofire</li>
+      <li>XCTest</li><li>Firebase</li><li>CocoaPods</li>
+    </ul>
+  </dialog>
+
+  <dialog id="p-patria" class="project-dialog" tabindex="-1" autofocus aria-labelledby="p-patria-t">
+    <button class="dialog-close" type="button" aria-label="Zavřít detail">&times;</button>
+    <p class="project-tag">Fintech · Patria Finance · Unicorn a.s.</p>
+    <h3 id="p-patria-t">Patria MobileTrader</h3>
+    <p class="project-meta">10/2018 – 04/2019 · iOS Developer</p>
+    <div class="gallery-strip">
+      <button class="shot" type="button" data-full="img/shot-patria-1-lg.jpg" data-caption="Patria Finance — obrazovka 1" aria-label="Zvětšit: Patria Finance — obrazovka 1">
+        <img src="img/shot-patria-1.jpg" alt="Patria Finance — obrazovka 1" width="392" height="696" loading="lazy">
+      </button>
+      <button class="shot" type="button" data-full="img/shot-patria-2-lg.jpg" data-caption="Patria Finance — obrazovka 2" aria-label="Zvětšit: Patria Finance — obrazovka 2">
+        <img src="img/shot-patria-2.jpg" alt="Patria Finance — obrazovka 2" width="392" height="696" loading="lazy">
+      </button>
+      <button class="shot" type="button" data-full="img/shot-patria-3-lg.jpg" data-caption="Patria Finance — obrazovka 3" aria-label="Zvětšit: Patria Finance — obrazovka 3">
+        <img src="img/shot-patria-3.jpg" alt="Patria Finance — obrazovka 3" width="392" height="696" loading="lazy">
+      </button>
+      <button class="shot" type="button" data-full="img/shot-patria-4-lg.jpg" data-caption="Patria Finance — obrazovka 4" aria-label="Zvětšit: Patria Finance — obrazovka 4">
+        <img src="img/shot-patria-4.jpg" alt="Patria Finance — obrazovka 4" width="392" height="696" loading="lazy">
+      </button>
+    </div>
+    <p class="project-links">
+      <a href="https://apps.apple.com/cz/app/patria-finance/id1600463800" target="_blank" rel="noopener">App Store — nástupnická verze</a>
+    </p>
+    <p class="dialog-lead">Obchodní aplikace pro klienty Patria Finance. Umožňovala
+      spravovat portfolio a obchodovat na burze přímo z mobilu, bez webové aplikace.</p>
+    <p class="dialog-lead">Byl jsem jediný iOS vývojář projektu. Spolupracoval jsem
+      s vlastníkem produktu, který zadání ladil se zástupcem klienta.</p>
+    <h4>Co aplikace uměla</h4>
+    <ul class="dialog-list">
+      <li><strong>Obchodování</strong> — nákupní a prodejní pokyny, obchodování na úvěr,
+        měnové konverze</li>
+      <li><strong>Portfolio</strong> — přehled pozic a toků finančních prostředků, historie
+        pokynů, oblíbené tituly</li>
+      <li><strong>Tituly</strong> — detail a graf cenného papíru, zprávy k titulu a aktuální
+        investiční příležitosti</li>
+      <li><strong>Převody</strong> — interní převody peněz i cenných papírů a výběry
+        finančních prostředků</li>
+      <li><strong>Alerty</strong> — cenové alerty na sledované tituly</li>
+      <li><strong>Přihlášení</strong> — účet spárovaný s webovou aplikací a potvrzený
+        SMS kódem</li>
+    </ul>
+    <h4>Architektura</h4>
+    <ul class="dialog-list"><li>Coordinator + MVVM</li></ul>
+    <h4>Technologie</h4>
+    <ul class="chips">
+      <li>Swift 4/5</li><li>UIKit</li><li>Alamofire</li>
+      <li>XCTest</li><li>Firebase</li><li>CocoaPods</li>
+    </ul>
+    <p class="dialog-note">Odkaz vede na nástupnickou aplikaci z roku 2022. Funkce jsou
+      stejné jako ve verzi, na které jsem pracoval; liší se grafika a přihlášení — dnešní
+      verze používá biometriku a Mobilní klíč, ta moje SMS kód.</p>
+</dialog>
+
+  <dialog id="p-bidx1" class="project-dialog" tabindex="-1" autofocus aria-labelledby="p-bidx1-t">
+    <button class="dialog-close" type="button" aria-label="Zavřít detail">&times;</button>
+    <p class="project-tag">PropTech · BidX1 Technology · adastra.one</p>
+    <h3 id="p-bidx1-t">BidX1</h3>
+    <p class="project-meta">09/2019 – 11/2019 · iOS Developer</p>
+    <p class="dialog-lead">MVP digitálního tržiště s nemovitostmi pro BidX1 Technology
+      Limited, postavené pro trhy v Jižní Africe, Irsku, Spojeném království a na Kypru.</p>
+    <h4>Architektura</h4>
+    <ul class="dialog-list"><li>MVVM</li></ul>
+    <h4>Technologie</h4>
+    <ul class="chips">
+      <li>Swift 5</li><li>UIKit</li><li>Combine</li><li>Moya</li>
+      <li>CocoaPods</li><li>XCTest</li>
+    </ul>
+  </dialog>
+
+  <dialog id="p-travel-free" class="project-dialog" tabindex="-1" autofocus aria-labelledby="p-travel-free-t">
+    <button class="dialog-close" type="button" aria-label="Zavřít detail">&times;</button>
+    <p class="project-tag">Retail · Travel FREE · Unicorn a.s.</p>
+    <h3 id="p-travel-free-t">Travel FREE CZ</h3>
+    <p class="project-meta">10/2018 – 04/2019 · iOS Developer</p>
+    <div class="gallery-strip">
+      <button class="shot" type="button" data-full="img/shot-travel-free-1-lg.jpg" data-caption="Travel FREE CZ — obrazovka 1" aria-label="Zvětšit: Travel FREE CZ — obrazovka 1">
+        <img src="img/shot-travel-free-1.jpg" alt="Travel FREE CZ — obrazovka 1" width="392" height="696" loading="lazy">
+      </button>
+      <button class="shot" type="button" data-full="img/shot-travel-free-2-lg.jpg" data-caption="Travel FREE CZ — obrazovka 2" aria-label="Zvětšit: Travel FREE CZ — obrazovka 2">
+        <img src="img/shot-travel-free-2.jpg" alt="Travel FREE CZ — obrazovka 2" width="392" height="696" loading="lazy">
+      </button>
+      <button class="shot" type="button" data-full="img/shot-travel-free-3-lg.jpg" data-caption="Travel FREE CZ — obrazovka 3" aria-label="Zvětšit: Travel FREE CZ — obrazovka 3">
+        <img src="img/shot-travel-free-3.jpg" alt="Travel FREE CZ — obrazovka 3" width="392" height="696" loading="lazy">
+      </button>
+      <button class="shot" type="button" data-full="img/shot-travel-free-4-lg.jpg" data-caption="Travel FREE CZ — obrazovka 4" aria-label="Zvětšit: Travel FREE CZ — obrazovka 4">
+        <img src="img/shot-travel-free-4.jpg" alt="Travel FREE CZ — obrazovka 4" width="392" height="696" loading="lazy">
+      </button>
+    </div>
+    <p class="project-links">
+      <a href="https://apps.apple.com/cz/app/travel-free-cz/id974005416" target="_blank" rel="noopener">Travel FREE CZ</a>
+    </p>
+    <p class="dialog-lead">Zákaznická aplikace prodejen Travel FREE, postavená kolem
+      věrnostního programu CLUBCARD.</p>
+    <p class="dialog-lead">Jako jediný iOS vývojář jsem se staral o údržbu a rozvoj aplikace.
+      Spolupracoval jsem s vlastníkem produktu, který zadání ladil se zástupcem
+      klienta.</p>
+    <h4>Co aplikace umí</h4>
+    <ul class="dialog-list">
+      <li><strong>Digitální CLUBCARD</strong> — věrnostní karta v telefonu, použitelná
+        i bez fyzické kartičky</li>
+      <li><strong>Body a kupony</strong> — přehled nasbíraných bodů a kuponů v digitální
+        podobě</li>
+      <li><strong>Správa karty</strong> — zablokování ztracené karty i její výměna přímo
+        z aplikace</li>
+      <li><strong>Sortiment</strong> — přehled zboží nabízeného v prodejnách</li>
+      <li><strong>Pobočky</strong> — mapa prodejen s detailem pobočky, otevírací dobou
+        a kontaktem</li>
+    </ul>
+    <h4>Architektura</h4>
+    <ul class="dialog-list"><li>Coordinator + MVVM</li></ul>
+    <h4>Technologie</h4>
+    <ul class="chips">
+      <li>Swift 4/5</li><li>UIKit</li><li>Alamofire</li>
+      <li>XCTest</li><li>Firebase</li><li>CocoaPods</li>
+    </ul>
+  </dialog>
+
+  <dialog id="p-tesco-atc" class="project-dialog" tabindex="-1" autofocus aria-labelledby="p-tesco-atc-t">
+    <button class="dialog-close" type="button" aria-label="Zavřít detail">&times;</button>
+    <p class="project-tag">Interní nástroj · Tesco · Unicorn a.s.</p>
+    <h3 id="p-tesco-atc-t">Tesco ATC</h3>
+    <p class="project-meta">10/2018 – 04/2019 · iOS Developer</p>
+    <p class="dialog-lead">Interní aplikace pro zaměstnance poboček Tesca ve čtyřech
+      zemích — Polsku, Česku, na Slovensku a v Maďarsku. Nikdy nešla do veřejné distribuce,
+      takže k ní neexistuje App Store listing ani screenshoty.</p>
+    <p class="dialog-lead">Byl jsem jediný iOS vývojář projektu. Spolupracoval jsem
+      s vlastníkem produktu, který zadání ladil se zástupcem klienta.</p>
+    <h4>Co aplikace uměla</h4>
+    <ul class="dialog-list">
+      <li><strong>Směny</strong> — přehled naplánovaných směn přihlášeného zaměstnance</li>
+      <li><strong>Docházka</strong> — aktuální stav docházky</li>
+      <li><strong>Pobočky</strong> — data vázaná na zaměstnance a jeho pobočku, případně
+        na více poboček, pokud jich měl přiřazeno víc</li>
+      <li><strong>Lokalizace</strong> — čtyři jazyky pro polský, český, slovenský
+        a maďarský trh nad shodnými daty</li>
+      <li><strong>Distribuce</strong> — Enterprise certifikát, tedy nasazení mimo
+        App Store</li>
+    </ul>
+    <h4>Architektura</h4>
+    <ul class="dialog-list"><li>Coordinator + MVVM</li></ul>
+    <h4>Technologie</h4>
+    <ul class="chips">
+      <li>Swift 4/5</li><li>UIKit</li><li>Alamofire</li>
+      <li>XCTest</li><li>Firebase</li><li>CocoaPods</li>
+    </ul>
+  </dialog>
+
+  <dialog id="p-doprava" class="project-dialog" tabindex="-1" autofocus aria-labelledby="p-doprava-t">
+    <button class="dialog-close" type="button" aria-label="Zavřít detail">&times;</button>
+    <p class="project-tag">Doprava · Freelance</p>
+    <h3 id="p-doprava-t">Dopravní aplikace</h3>
+    <p class="project-meta">04/2018 – 09/2018 · iOS &amp; watchOS Developer</p>
+    <p class="dialog-lead">MVP aplikace pro sledování pražské integrované dopravy,
+      souběžně pro iPhone i Apple Watch. První samostatný projekt po přechodu od grafiky
+      k vývoji.</p>
+    <p class="dialog-lead">Kromě backendu jsem aplikaci dělal celou sám — grafický návrh
+      i implementaci. Kvůli obtížné dostupnosti dat zůstalo u MVP a projekt nikdy nevyšel
+      ven.</p>
+    <h4>Co aplikace uměla</h4>
+    <ul class="dialog-list">
+      <li><strong>Nejbližší spoje</strong> — seznam odjezdů z pěti nejbližších zastávek
+        pražské integrované dopravy</li>
+      <li><strong>Poloha z hodinek</strong> — zastávky se hledaly podle polohy Apple Watch,
+        ne telefonu</li>
+      <li><strong>Hodinková část</strong> — nesamostatná aplikace, která zobrazovala spoje
+        z nejbližší zastávky nebo z té, kterou si uživatel vybral z pěti nejbližších</li>
+      <li><strong>Data</strong> — backend s pravidelným importem veřejně dostupných
+        jízdních dat</li>
+    </ul>
+    <h4>Architektura</h4>
+    <ul class="dialog-list"><li>MVVM</li></ul>
+    <h4>Technologie</h4>
+    <ul class="chips">
+      <li>Swift 4</li><li>UIKit</li><li>watchOS</li><li>URLSession</li><li>XCTest</li><li>CocoaPods</li>
+    </ul>
+  </dialog>
+
+  <dialog id="lightbox" class="lightbox" tabindex="-1" autofocus aria-label="Zvětšený screenshot">
+    <button class="lightbox-close" type="button" aria-label="Zavřít">&times;</button>
+    <button class="lightbox-nav prev" type="button" aria-label="Předchozí screenshot">&lsaquo;</button>
+    <figure>
+      <img id="lightbox-img" src="" alt="">
+      <figcaption id="lightbox-caption"></figcaption>
+    </figure>
+    <button class="lightbox-nav next" type="button" aria-label="Další screenshot">&rsaquo;</button>
+  </dialog>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>&copy; 2026 Miroslav Tourek · Praha, CZ</p>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      // Adresa se skládá až na kliknutí — v markupu není celá nikdy a headless
+      // sběrač, který stránku jen načte, v DOM žádný mailto: nenajde.
+      // Doména je navíc plus-alias, takže případný spam jde filtrovat i zvlášť.
+      document.querySelectorAll('.js-mail').forEach(function (link) {
+        link.addEventListener('click', function (e) {
+          if (link.dataset.revealed) return; // podruhé už odkaz funguje sám
+          e.preventDefault();
+          var address = link.dataset.user + String.fromCharCode(64) + link.dataset.domain;
+          link.href = 'mailto:' + address;
+          if (link.querySelector('.at-word')) link.textContent = address;
+          link.dataset.revealed = '1';
+          window.location.href = link.href;
+        });
+      });
+
+      var open = function (id) {
+        var dlg = document.getElementById(id);
+        if (!dlg || typeof dlg.showModal !== 'function') return;
+        dlg.showModal();
+        dlg.focus(); // park focus on the dialog, not on the close button
+      };
+
+      // Explicit button in each card — the keyboard/screen-reader path.
+      document.querySelectorAll('.card-more').forEach(function (btn) {
+        btn.addEventListener('click', function () { open(btn.dataset.dialog); });
+      });
+
+      // Clicking anywhere on the card is a mouse convenience; links keep working.
+      document.querySelectorAll('.project-card[data-dialog]').forEach(function (card) {
+        card.addEventListener('click', function (e) {
+          if (e.target.closest('a, button')) return;
+          open(card.dataset.dialog);
+        });
+      });
+
+      // Lightbox — click a screenshot to view it large, arrows to move between them.
+      var lightbox = document.getElementById('lightbox');
+      var lightboxImg = document.getElementById('lightbox-img');
+      var lightboxCaption = document.getElementById('lightbox-caption');
+      var shots = [];
+      var current = 0;
+
+      var show = function (i) {
+        current = (i + shots.length) % shots.length;
+        var shot = shots[current];
+        lightboxImg.src = shot.dataset.full;
+        lightboxImg.alt = shot.dataset.caption;
+        lightboxCaption.textContent = shot.dataset.caption;
+        lightbox.querySelectorAll('.lightbox-nav').forEach(function (nav) {
+          nav.hidden = shots.length < 2;
+        });
+        // Warm up the neighbours so arrowing through is instant.
+        [current - 1, current + 1].forEach(function (i) {
+          var neighbour = shots[(i + shots.length) % shots.length];
+          if (neighbour !== shot) new Image().src = neighbour.dataset.full;
+        });
+      };
+
+      document.querySelectorAll('.shot').forEach(function (shot) {
+        shot.addEventListener('click', function () {
+          shots = [].slice.call(shot.closest('.gallery-strip').querySelectorAll('.shot'));
+          show(shots.indexOf(shot));
+          document.body.classList.add('has-lightbox');
+          lightbox.showModal();
+          lightbox.focus();
+        });
+      });
+
+      lightbox.querySelector('.prev').addEventListener('click', function () { show(current - 1); });
+      lightbox.querySelector('.next').addEventListener('click', function () { show(current + 1); });
+      lightbox.querySelector('.lightbox-close').addEventListener('click', function () { lightbox.close(); });
+      lightbox.addEventListener('click', function (e) {
+        if (e.target === lightbox || e.target.tagName === 'FIGURE') lightbox.close();
+      });
+      lightbox.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowLeft') { e.preventDefault(); show(current - 1); }
+        if (e.key === 'ArrowRight') { e.preventDefault(); show(current + 1); }
+      });
+      lightbox.addEventListener('close', function () {
+        document.body.classList.remove('has-lightbox');
+        lightboxImg.src = '';
+      });
+
+      document.querySelectorAll('.project-dialog').forEach(function (dlg) {
+        dlg.querySelector('.dialog-close').addEventListener('click', function () { dlg.close(); });
+        // Click on the backdrop (the dialog element itself) closes it.
+        dlg.addEventListener('click', function (e) {
+          if (e.target === dlg) dlg.close();
+        });
+      });
+    })();
+  </script>
+
+  <script src="header.js"></script>
+  <script src="theme.js"></script>
+</body>
+</html>
