@@ -240,6 +240,20 @@ h1, h2, h3 {
 }
 .site-header nav a:hover { color: var(--text-invert); }
 
+/* Language switch: a small pill next to the theme toggle, same treatment
+   over the dark hero and on the scrolled bar. */
+.site-header nav a.lang-switch {
+  padding: 6px 11px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: var(--radius-pill);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
+.site-header nav a.lang-switch:hover { background: rgba(255, 255, 255, 0.1); }
+.site-header.is-stuck nav a.lang-switch { border-color: var(--line); }
+.site-header.is-stuck nav a.lang-switch:hover { background: var(--accent-soft); }
+
 /* Theme menu. The trigger sits over the dark hero, so it keeps the light styling. */
 .theme-menu { position: relative; }
 .theme-toggle {

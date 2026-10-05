@@ -13,7 +13,12 @@
   var list = wrap && wrap.querySelector('.theme-list');
   var items = list ? Array.prototype.slice.call(list.querySelectorAll('[data-choice]')) : [];
   var systemDark = window.matchMedia('(prefers-color-scheme: dark)');
-  var LABEL = { system: 'podle systému', light: 'světlý', dark: 'tmavý' };
+  // Labels follow the page language, so the same file serves the Czech and English pages.
+  var english = (root.lang || '').toLowerCase().indexOf('en') === 0;
+  var PREFIX = english ? 'Theme: ' : 'Motiv vzhledu: ';
+  var LABEL = english
+    ? { system: 'system', light: 'light', dark: 'dark' }
+    : { system: 'podle systému', light: 'světlý', dark: 'tmavý' };
 
   var stored = null;
   try { stored = localStorage.getItem(STORAGE_KEY); } catch (e) { /* storage is optional */ }
@@ -30,7 +35,7 @@
     if (toggle) {
       toggle.setAttribute('data-mode', mode);
       toggle.setAttribute('data-effective', dark ? 'dark' : 'light');
-      toggle.setAttribute('aria-label', 'Motiv vzhledu: ' + LABEL[mode]);
+      toggle.setAttribute('aria-label', PREFIX + LABEL[mode]);
     }
     items.forEach(function (item) {
       item.setAttribute('aria-checked', String(item.dataset.choice === mode));
