@@ -860,6 +860,9 @@ html:has(dialog[open]) { overflow: hidden; }
   transition: transform 0.15s ease;
 }
 .gallery-strip .shot:hover { transform: translateY(-2px); }
+/* A landscape screenshot as tall as half a portrait one, centred beside them. */
+.gallery-strip .shot.is-landscape { align-self: center; }
+.gallery-strip .shot.is-landscape img { width: 256px; }
 .gallery-strip .shot:hover img { border-color: var(--accent); }
 
 /* Lightbox */
@@ -920,6 +923,9 @@ body.has-lightbox .project-dialog[open] {
   height: auto;
   border-radius: 14px;
   box-shadow: 0 12px 40px rgb(0 0 0 / 0.45);
+}
+.lightbox img.is-landscape {
+  max-width: min(900px, 90vw);
 }
 .lightbox figcaption {
   font-size: 0.8rem;
