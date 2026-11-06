@@ -420,6 +420,28 @@
             <button class="card-more" type="button" data-dialog="p-elementa">Project details</button>
           </article>
 
+          <article class="project-card" data-dialog="p-eurokey">
+            <div class="project-thumb has-icon">
+              <img src="../img/icon-eurokey.jpg" alt="EuroKey - CZ app icon" width="256" height="256" loading="lazy">
+            </div>
+            <p class="project-tag">Maps &amp; navigation · Own app</p>
+            <h3>EuroKey - CZ</h3>
+            <p class="project-meta">06/2026 → present · Clean Architecture + MVI</p>
+            <p>An app for Euroklíč holders: almost 1,500 accessible toilets, platforms and
+              lifts across Czechia on a map, in a list and in search, with spoken directions
+              all the way, even with the phone locked. For iPhone, iPhone Duo and iPad, in
+              Czech and English. I designed and built it on my own; it's coming soon to the
+              App Store.</p>
+            <ul class="chips">
+              <li>Swift 6</li><li>SwiftUI</li><li>MapKit</li><li>Core Location</li><li>AVFoundation</li>
+              <li>Observation</li><li>SPM</li><li>Swift Testing</li><li>XCUITest</li>
+            </ul>
+            <p class="project-links">
+              <a href="https://www.carrione.cz/en/apps/eurokey/" target="_blank" rel="noopener">App website</a>
+            </p>
+            <button class="card-more" type="button" data-dialog="p-eurokey">Project details</button>
+          </article>
+
         </div>
       </div>
     </section>
@@ -438,10 +460,12 @@
               idea and design through architecture to release. On selected projects, I use
               Kotlin Multiplatform to share the domain and data layers. The first of them,
               <a href="https://www.carrione.cz/en/apps/periodic-table/" target="_blank" rel="noopener">Periodic table - Elementa</a>,
-              is already on the App Store; I’m working on the others.</p>
+              is already on the App Store. The second,
+              <a href="https://www.carrione.cz/en/apps/eurokey/" target="_blank" rel="noopener">EuroKey - CZ</a>,
+              an app with spoken directions to Euroklíč places, is coming soon. I’m working on more.</p>
             <ul class="chips">
               <li>Swift 6</li><li>macOS</li><li>watchOS</li><li>SwiftUI</li><li>Observation</li><li>Swift Concurrency</li>
-              <li>Swift Testing</li><li>SwiftData</li><li>CoreData</li><li>MapKit</li><li>WidgetKit</li><li>SPM</li><li>Firebase</li>
+              <li>Swift Testing</li><li>SwiftData</li><li>CoreData</li><li>MapKit</li><li>Core Location</li><li>AVFoundation</li><li>WidgetKit</li><li>SPM</li><li>Firebase</li>
               <li>Kotlin Multiplatform</li><li>Koin</li><li>Ktor</li>
             </ul>
           </li>
@@ -1287,6 +1311,85 @@
     </ul>
   </dialog>
 
+  <dialog id="p-eurokey" class="project-dialog" tabindex="-1" autofocus aria-labelledby="p-eurokey-t">
+    <button class="dialog-close" type="button" aria-label="Close details">&times;</button>
+    <p class="project-tag">Maps &amp; navigation · Own app</p>
+    <h3 id="p-eurokey-t">EuroKey - CZ</h3>
+    <p class="project-meta">06/2026 → present · iOS Developer</p>
+    <div class="gallery-strip">
+      <button class="shot" type="button" data-full="../img/shot-eurokey-en-1-lg.jpg" data-caption="EuroKey — map of places" aria-label="Enlarge: EuroKey — map of places">
+        <img src="../img/shot-eurokey-en-1.jpg" alt="EuroKey — map of places" width="392" height="851" loading="lazy">
+      </button>
+      <button class="shot" type="button" data-full="../img/shot-eurokey-en-2-lg.jpg" data-caption="EuroKey — place details with the route" aria-label="Enlarge: EuroKey — place details with the route">
+        <img src="../img/shot-eurokey-en-2.jpg" alt="EuroKey — place details with the route" width="392" height="851" loading="lazy">
+      </button>
+      <button class="shot" type="button" data-full="../img/shot-eurokey-en-3-lg.jpg" data-caption="EuroKey — navigation with spoken directions" aria-label="Enlarge: EuroKey — navigation with spoken directions">
+        <img src="../img/shot-eurokey-en-3.jpg" alt="EuroKey — navigation with spoken directions" width="392" height="851" loading="lazy">
+      </button>
+      <button class="shot" type="button" data-full="../img/shot-eurokey-en-4-lg.jpg" data-caption="EuroKey — nearest places first" aria-label="Enlarge: EuroKey — nearest places first">
+        <img src="../img/shot-eurokey-en-4.jpg" alt="EuroKey — nearest places first" width="392" height="851" loading="lazy">
+      </button>
+      <button class="shot" type="button" data-full="../img/shot-eurokey-en-5-lg.jpg" data-caption="EuroKey — search across Czechia" aria-label="Enlarge: EuroKey — search across Czechia">
+        <img src="../img/shot-eurokey-en-5.jpg" alt="EuroKey — search across Czechia" width="392" height="851" loading="lazy">
+      </button>
+      <button class="shot is-landscape" type="button" data-full="../img/shot-eurokey-en-6-lg.jpg" data-caption="EuroKey — place details in landscape, beside the map" aria-label="Enlarge: EuroKey — place details in landscape, beside the map">
+        <img src="../img/shot-eurokey-en-6.jpg" alt="EuroKey — place details in landscape, beside the map" width="512" height="235" loading="lazy">
+      </button>
+      <button class="shot is-landscape" type="button" data-full="../img/shot-eurokey-en-7-lg.jpg" data-caption="EuroKey — navigation in landscape, in 3D" aria-label="Enlarge: EuroKey — navigation in landscape, in 3D">
+        <img src="../img/shot-eurokey-en-7.jpg" alt="EuroKey — navigation in landscape, in 3D" width="512" height="235" loading="lazy">
+      </button>
+    </div>
+    <p class="dialog-lead">My own app for iPhone, iPhone Duo and iPad, which I made on my own from
+      design to code and which is coming soon to the App Store. For Euroklíč holders and those
+      who travel with them, it finds the places in Czechia that a Euroklíč opens and guides
+      them there by voice, even with the phone locked.</p>
+    <p class="dialog-lead">The people who use it need accessibility every day. That's why I also
+      paid attention to VoiceOver, larger text and automated accessibility audits in UI tests.</p>
+    <h4>What the app does</h4>
+    <ul class="dialog-list">
+      <li><strong>Map, list and search</strong> — almost 1,500 places built into the app,
+        nearest first; the map in 2D or 3D with buildings, and the list and search work offline</li>
+      <li><strong>Routes on foot or by car</strong> — distance, time and the line of the route from MapKit
+        in a place's details</li>
+      <li><strong>Navigation</strong> — following the user along the route, rerouting after
+        a wrong turn and telling them when they've arrived</li>
+      <li><strong>Spoken directions</strong> — every manoeuvre announced ahead and when it's
+        there, with haptics; the voice keeps going in the background, and with VoiceOver on,
+        VoiceOver reads the directions</li>
+      <li><strong>Every screen</strong> — iPhone in portrait and landscape, minding the
+        Dynamic Island, iPad, and iPhone Duo folded or open, each with its own layout for
+        a place's details</li>
+    </ul>
+    <h4>Architecture</h4>
+    <ul class="dialog-list">
+      <li>Clean Architecture — each layer is a separate local SPM package: the domain, data
+        toolkits (place data, MapKit routing, location, voice, preferences) and one package
+        per feature</li>
+      <li>MVI in the presentation layer on top of Observation, navigation through
+        coordinators, dependency injection through a custom property wrapper</li>
+      <li>The rules of navigation — when to reroute and when to announce a manoeuvre — as
+        domain types of their own, covered by tests</li>
+      <li>Layouts that follow the side of the Dynamic Island and the shape of iPhone Duo's
+        display, neither of which SwiftUI can tell on its own</li>
+    </ul>
+    <h4>Quality</h4>
+    <ul class="dialog-list">
+      <li><strong>Tests</strong> — unit tests in Swift Testing for the domain, data and view
+        models</li>
+      <li><strong>Accessibility audits</strong> — UI tests in a separate test plan check
+        larger text, VoiceOver and contrast on every screen</li>
+      <li><strong>Localization</strong> — String Catalogs in every package</li>
+      <li><strong>Privacy</strong> — background location only while navigating, no
+        analytics, a privacy manifest with no collected data</li>
+    </ul>
+    <h4>Technologies</h4>
+    <ul class="chips">
+      <li>Swift 6</li><li>SwiftUI</li><li>Observation</li><li>Swift Concurrency</li><li>MapKit</li>
+      <li>Core Location</li><li>AVFoundation</li><li>SPM</li><li>Swift Testing</li><li>XCUITest</li>
+      <li>String Catalogs</li>
+    </ul>
+  </dialog>
+
   <dialog id="lightbox" class="lightbox" tabindex="-1" autofocus aria-label="Enlarged screenshot">
     <button class="lightbox-close" type="button" aria-label="Close">&times;</button>
     <button class="lightbox-nav prev" type="button" aria-label="Previous screenshot">&lsaquo;</button>
@@ -1351,6 +1454,7 @@
         current = (i + shots.length) % shots.length;
         var shot = shots[current];
         lightboxImg.src = shot.dataset.full;
+        lightboxImg.classList.toggle('is-landscape', shot.classList.contains('is-landscape'));
         lightboxImg.alt = shot.dataset.caption;
         lightboxCaption.textContent = shot.dataset.caption;
         lightbox.querySelectorAll('.lightbox-nav').forEach(function (nav) {

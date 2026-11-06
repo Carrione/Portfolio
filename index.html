@@ -419,6 +419,27 @@
             <button class="card-more" type="button" data-dialog="p-elementa">Detail projektu</button>
           </article>
 
+          <article class="project-card" data-dialog="p-eurokey">
+            <div class="project-thumb has-icon">
+              <img src="img/icon-eurokey.jpg" alt="Ikona aplikace Euroklíč - CZ" width="256" height="256" loading="lazy">
+            </div>
+            <p class="project-tag">Mapy a navigace · Vlastní aplikace</p>
+            <h3>Euroklíč - CZ</h3>
+            <p class="project-meta">06/2026 → dnes · Clean Architecture + MVI</p>
+            <p>Aplikace pro držitele Euroklíče: bezmála 1 500 bezbariérových toalet, plošin
+              a výtahů v Česku na mapě, v seznamu i v hledání. K vybranému místu dovede
+              hlasovou navigací, i se zamčeným telefonem. Pro iPhone, iPhone Duo a iPad, česky i anglicky.
+              Navrhl a napsal jsem ji celou sám, v App Storu bude brzy.</p>
+            <ul class="chips">
+              <li>Swift 6</li><li>SwiftUI</li><li>MapKit</li><li>Core Location</li><li>AVFoundation</li>
+              <li>Observation</li><li>SPM</li><li>Swift Testing</li><li>XCUITest</li>
+            </ul>
+            <p class="project-links">
+              <a href="https://www.carrione.cz/aplikace/euroklic/" target="_blank" rel="noopener">Stránka aplikace</a>
+            </p>
+            <button class="card-more" type="button" data-dialog="p-eurokey">Detail projektu</button>
+          </article>
+
         </div>
       </div>
     </section>
@@ -437,10 +458,12 @@
               a návrhu přes architekturu po vydání. U vybraných projektů využívám
               Kotlin Multiplatform pro sdílení doménové a datové vrstvy. První z nich,
               <a href="https://www.carrione.cz/aplikace/periodicka-tabulka/" target="_blank" rel="noopener">Periodická tabulka - Elementa</a>,
-              už je v App Storu, na dalších pracuji.</p>
+              už je v App Storu. Druhá,
+              <a href="https://www.carrione.cz/aplikace/euroklic/" target="_blank" rel="noopener">Euroklíč - CZ</a>,
+              aplikace s hlasovou navigací k místům pro Euroklíč, vyjde brzy. Na dalších pracuji.</p>
             <ul class="chips">
               <li>Swift 6</li><li>macOS</li><li>watchOS</li><li>SwiftUI</li><li>Observation</li><li>Swift Concurrency</li>
-              <li>Swift Testing</li><li>SwiftData</li><li>CoreData</li><li>MapKit</li><li>WidgetKit</li><li>SPM</li><li>Firebase</li>
+              <li>Swift Testing</li><li>SwiftData</li><li>CoreData</li><li>MapKit</li><li>Core Location</li><li>AVFoundation</li><li>WidgetKit</li><li>SPM</li><li>Firebase</li>
               <li>Kotlin Multiplatform</li><li>Koin</li><li>Ktor</li>
             </ul>
           </li>
@@ -1285,6 +1308,82 @@
     </ul>
   </dialog>
 
+  <dialog id="p-eurokey" class="project-dialog" tabindex="-1" autofocus aria-labelledby="p-eurokey-t">
+    <button class="dialog-close" type="button" aria-label="Zavřít detail">&times;</button>
+    <p class="project-tag">Mapy a navigace · Vlastní aplikace</p>
+    <h3 id="p-eurokey-t">Euroklíč - CZ</h3>
+    <p class="project-meta">06/2026 → dnes · iOS Developer</p>
+    <div class="gallery-strip">
+      <button class="shot" type="button" data-full="img/shot-eurokey-cs-1-lg.jpg" data-caption="Euroklíč — mapa míst" aria-label="Zvětšit: Euroklíč — mapa míst">
+        <img src="img/shot-eurokey-cs-1.jpg" alt="Euroklíč — mapa míst" width="392" height="851" loading="lazy">
+      </button>
+      <button class="shot" type="button" data-full="img/shot-eurokey-cs-2-lg.jpg" data-caption="Euroklíč — detail místa s trasou" aria-label="Zvětšit: Euroklíč — detail místa s trasou">
+        <img src="img/shot-eurokey-cs-2.jpg" alt="Euroklíč — detail místa s trasou" width="392" height="851" loading="lazy">
+      </button>
+      <button class="shot" type="button" data-full="img/shot-eurokey-cs-3-lg.jpg" data-caption="Euroklíč — navigace s hlasovými pokyny" aria-label="Zvětšit: Euroklíč — navigace s hlasovými pokyny">
+        <img src="img/shot-eurokey-cs-3.jpg" alt="Euroklíč — navigace s hlasovými pokyny" width="392" height="851" loading="lazy">
+      </button>
+      <button class="shot" type="button" data-full="img/shot-eurokey-cs-4-lg.jpg" data-caption="Euroklíč — seznam od nejbližšího" aria-label="Zvětšit: Euroklíč — seznam od nejbližšího">
+        <img src="img/shot-eurokey-cs-4.jpg" alt="Euroklíč — seznam od nejbližšího" width="392" height="851" loading="lazy">
+      </button>
+      <button class="shot" type="button" data-full="img/shot-eurokey-cs-5-lg.jpg" data-caption="Euroklíč — hledání po celém Česku" aria-label="Zvětšit: Euroklíč — hledání po celém Česku">
+        <img src="img/shot-eurokey-cs-5.jpg" alt="Euroklíč — hledání po celém Česku" width="392" height="851" loading="lazy">
+      </button>
+      <button class="shot is-landscape" type="button" data-full="img/shot-eurokey-cs-6-lg.jpg" data-caption="Euroklíč — detail místa na šířku, vedle mapy" aria-label="Zvětšit: Euroklíč — detail místa na šířku, vedle mapy">
+        <img src="img/shot-eurokey-cs-6.jpg" alt="Euroklíč — detail místa na šířku, vedle mapy" width="512" height="235" loading="lazy">
+      </button>
+      <button class="shot is-landscape" type="button" data-full="img/shot-eurokey-cs-7-lg.jpg" data-caption="Euroklíč — navigace na šířku ve 3D" aria-label="Zvětšit: Euroklíč — navigace na šířku ve 3D">
+        <img src="img/shot-eurokey-cs-7.jpg" alt="Euroklíč — navigace na šířku ve 3D" width="512" height="235" loading="lazy">
+      </button>
+    </div>
+    <p class="dialog-lead">Vlastní aplikace pro iPhone, iPhone Duo a iPad, kterou jsem od návrhu
+      po kód udělal sám a brzy vyjde v App Storu. Držitelům Euroklíče a jejich doprovodu najde
+      v Česku místa, která Euroklíč odemyká, a dovede je k nim hlasem, i se zamčeným telefonem.</p>
+    <p class="dialog-lead">Kdo aplikaci používá, potřebuje přístupnost každý den. Proto jsem
+      věnoval pozornost i VoiceOveru, velkému písmu a automatickým auditům přístupnosti
+      v UI testech.</p>
+    <h4>Co aplikace umí</h4>
+    <ul class="dialog-list">
+      <li><strong>Mapa, seznam a hledání</strong> — bezmála 1 500 míst přímo v aplikaci,
+        seřazených od nejbližšího; mapa ve 2D i 3D s budovami, seznam a hledání fungují i bez internetu</li>
+      <li><strong>Trasa pěšky i autem</strong> — vzdálenost, čas a čára trasy z MapKitu
+        v detailu místa</li>
+      <li><strong>Navigace</strong> — sledování polohy na trase, přepočet po sejití z cesty
+        a upozornění v cíli</li>
+      <li><strong>Hlasové pokyny</strong> — každý manévr ohlášený předem i na místě, s haptikou;
+        hlas běží i na pozadí, se zapnutým VoiceOverem pokyny čte VoiceOver</li>
+      <li><strong>Každá obrazovka</strong> — iPhone na výšku i na šířku s ohledem na Dynamic
+        Island, iPad a iPhone Duo složený i rozložený, každý s vlastním rozvržením detailu</li>
+    </ul>
+    <h4>Architektura</h4>
+    <ul class="dialog-list">
+      <li>Clean Architecture — každá vrstva je samostatný lokální SPM balíček: doména,
+        datové toolkity (data míst, trasy z MapKitu, poloha, hlas, nastavení) a balíčky
+        jednotlivých obrazovek</li>
+      <li>MVI v prezentační vrstvě nad Observation, navigace přes koordinátory,
+        dependency injection přes vlastní property wrapper</li>
+      <li>Pravidla navigace — kdy trasu přepočítat a kdy ohlásit manévr — jako samostatné
+        doménové typy pokryté testy</li>
+      <li>Rozvržení podle strany Dynamic Islandu a tvaru displeje iPhonu Duo, které SwiftUI
+        samo nepozná</li>
+    </ul>
+    <h4>Kvalita</h4>
+    <ul class="dialog-list">
+      <li><strong>Testy</strong> — unit testy ve Swift Testing pro doménu, data i view modely</li>
+      <li><strong>Audity přístupnosti</strong> — UI testy v samostatném test planu kontrolují
+        velké písmo, VoiceOver a kontrast na každé obrazovce</li>
+      <li><strong>Lokalizace</strong> — String Catalogs v každém balíčku</li>
+      <li><strong>Soukromí</strong> — poloha na pozadí jen během navigace, bez analytiky,
+        privacy manifest bez sbíraných dat</li>
+    </ul>
+    <h4>Technologie</h4>
+    <ul class="chips">
+      <li>Swift 6</li><li>SwiftUI</li><li>Observation</li><li>Swift Concurrency</li><li>MapKit</li>
+      <li>Core Location</li><li>AVFoundation</li><li>SPM</li><li>Swift Testing</li><li>XCUITest</li>
+      <li>String Catalogs</li>
+    </ul>
+  </dialog>
+
   <dialog id="lightbox" class="lightbox" tabindex="-1" autofocus aria-label="Zvětšený screenshot">
     <button class="lightbox-close" type="button" aria-label="Zavřít">&times;</button>
     <button class="lightbox-nav prev" type="button" aria-label="Předchozí screenshot">&lsaquo;</button>
@@ -1349,6 +1448,7 @@
         current = (i + shots.length) % shots.length;
         var shot = shots[current];
         lightboxImg.src = shot.dataset.full;
+        lightboxImg.classList.toggle('is-landscape', shot.classList.contains('is-landscape'));
         lightboxImg.alt = shot.dataset.caption;
         lightboxCaption.textContent = shot.dataset.caption;
         lightbox.querySelectorAll('.lightbox-nav').forEach(function (nav) {
