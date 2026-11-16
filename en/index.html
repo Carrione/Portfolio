@@ -149,8 +149,8 @@
               alongside 2–3 agency developers. We moved most features to Kotlin
               Multiplatform — the domain and data layers and part of the view models are
               shared, while the UI stayed native in SwiftUI, UIKit and Jetpack Compose.
-              I connected iOS to the shared layer, rewrote parts into shared Kotlin and
-              contributed to the Android UI. I led the Swift 6 and strict concurrency
+              I developed features across the whole app, connected iOS to the shared layer,
+              rewrote parts into shared Kotlin and contributed to the Android UI. I led the Swift 6 and strict concurrency
               migration. I took over iOS CI/CD and the build server, rebuilt them several
               times and cut the build time from 14 to 3 minutes.
               One codebase produces four apps — two markets, two platforms.</p>
@@ -476,7 +476,8 @@
             <h3>iOS Developer <span class="at">·</span> Heureka Group</h3>
             <p class="timeline-meta">Prague · 4 yrs 10 mos</p>
             <p>iOS guarantor for the Heureka.cz and Heureka.sk apps, one of two in-house iOS
-              developers. Swift 6, CLEAN + MVI, Kotlin Multiplatform, iOS CI/CD and build
+              developers. Feature development across the whole app, Swift 6, CLEAN + MVI,
+              Kotlin Multiplatform, iOS CI/CD and build
               server — build time cut from 14 to 3 minutes.</p>
             <ul class="chips">
               <li>Swift 6</li><li>Swift Concurrency</li><li>SwiftUI</li><li>UIKit</li><li>Observation</li><li>Combine</li>
@@ -805,14 +806,15 @@
       codebase thus produces four apps — Heureka.cz and Heureka.sk for iOS and Android.</p>
     <h4>My contribution</h4>
     <p class="dialog-lead">Throughout my time there I continuously developed new features and changes
-      to existing ones based on product requirements — from requirement analysis and
+      to existing ones across the whole app based on product requirements — from requirement analysis and
       solution design through implementation with tests to release on TestFlight and the
       App Store. On top of that, code reviews and testing other developers' builds.
       Selected highlights:</p>
-    <p class="dialog-lead"><strong>Kotlin Multiplatform</strong> — I connected the iOS UI to the shared
-      layer, rewrote parts of the code into shared Kotlin and contributed to the Android UI
-      (Jetpack Compose). As the person responsible for the iOS app, I tested and signed off
-      the production release of the KMP version.</p>
+    <p class="dialog-lead"><strong>Kotlin Multiplatform</strong> — the move to KMP was a team effort:
+      we split the features among us and I delivered mine independently. I connected the
+      iOS UI to the shared layer, rewrote parts of the code into shared Kotlin and contributed
+      to the Android UI (Jetpack Compose). Before the KMP version went to
+      production, each of us tested it on our own and we decided on the release together.</p>
     <p class="dialog-lead"><strong>Swift 6</strong> — I led the migration of the apps to Swift 6 and strict
       concurrency: async/await and actors across the codebase, Sendable and @MainActor
       isolation.</p>
@@ -826,14 +828,19 @@
     <p class="dialog-lead"><strong>AI code review</strong> — I integrated AI code review built on Claude
       Code into CI/CD. It posts a comment on every merge request — and with it, a more
       consistent check of how changes affect code security.</p>
-    <p class="dialog-lead"><strong>Product comparison</strong> — I designed and implemented the feature
+    <p class="dialog-lead"><strong>Product comparison</strong> — I designed and implemented the feature on my own,
       from solution design to release (see the “product comparison” screenshot in the
       gallery above). Later I also reworked the look and behaviour of the product detail.</p>
-    <p class="dialog-lead"><strong>Codebase modernisation</strong> — first I cleaned presentation logic and
-      state management out of the views, then rewrote them in SwiftUI (navigation stayed in
-      UIKit). I migrated selected features from REST to GraphQL, introduced local SPM
-      packages and adopted Liquid Glass in the apps.</p>
-    <p class="dialog-lead"><strong>Buying right in the app</strong> — I connected the apps to Heureka's
+    <p class="dialog-lead"><strong>Architecture and codebase modernisation</strong> — on my own, I cleaned
+      presentation logic and state management out of the views and introduced MVP in the
+      presentation layer; as iOS guarantor I then kept the architecture consistent through
+      code review. The next steps were team work, with features split among us: the move to
+      CLEAN + MVI with FlowControllers, agreed with the external partner, rewriting views in
+      SwiftUI (navigation stayed in UIKit), migrating selected features from REST to GraphQL
+      and local SPM packages.</p>
+    <p class="dialog-lead"><strong>Liquid Glass</strong> — on my own, I brought the new Liquid Glass look
+      to the apps.</p>
+    <p class="dialog-lead"><strong>Buying right in the app</strong> — on my own, I connected the apps to Heureka's
       web cart — the cart runs in a web view inside the app, so users can buy without
       leaving it.</p>
     <h4>What the apps do</h4>

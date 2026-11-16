@@ -148,8 +148,8 @@
               vývojáři z agentury. Většinu featur jsme převedli do Kotlin Multiplatform —
               sdílená je doménová a datová vrstva i část view modelů, UI zůstalo
               v nativních technologiích SwiftUI, UIKit a Jetpack Compose.
-              Napojoval jsem iOS na sdílenou vrstvu, přepisoval části do sdíleného Kotlinu
-              a přispíval i do UI Androidu. Přechod na Swift 6 a strict concurrency byl
+              Vyvíjel jsem featury napříč celou aplikací, napojoval iOS na sdílenou vrstvu,
+              přepisoval části do sdíleného Kotlinu a přispíval i do UI Androidu. Přechod na Swift 6 a strict concurrency byl
               v mé režii. Převzal jsem iOS CI/CD a build server, několikrát je přestavěl
               a build zkrátil ze 14 na 3 minuty.
               Z jedné codebase vznikají čtyři aplikace — dva trhy, dvě platformy.</p>
@@ -475,7 +475,8 @@
             <h3>iOS Developer <span class="at">·</span> Heureka Group</h3>
             <p class="timeline-meta">Praha · 4 roky 10 měsíců</p>
             <p>Garant iOS aplikací Heureka.cz a Heureka.sk, jeden ze dvou kmenových iOS
-              vývojářů. Swift 6, CLEAN + MVI, Kotlin Multiplatform, iOS CI/CD a build server —
+              vývojářů. Vývoj featur napříč celou aplikací, Swift 6, CLEAN + MVI, Kotlin
+              Multiplatform, iOS CI/CD a build server —
               build ze 14 na 3 minuty.</p>
             <ul class="chips">
               <li>Swift 6</li><li>Swift Concurrency</li><li>SwiftUI</li><li>UIKit</li><li>Observation</li><li>Combine</li>
@@ -803,13 +804,14 @@
       codebase tak vznikají čtyři aplikace — Heureka.cz a Heureka.sk pro iOS i Android.</p>
     <h4>Můj přínos</h4>
     <p class="dialog-lead">Po celou dobu jsem průběžně vyvíjel nové featury i úpravy
-      stávajících podle zadání produktu — od analýzy požadavku a návrhu řešení přes
+      stávajících napříč celou aplikací podle zadání produktu — od analýzy požadavku a návrhu řešení přes
       implementaci s testy až po vydání do TestFlightu a App Storu. K tomu code review
       a testování buildů ostatních vývojářů. Z toho vybírám:</p>
-    <p class="dialog-lead"><strong>Kotlin Multiplatform</strong> — iOS UI jsem napojoval
-      na sdílenou vrstvu, části kódu přepisoval do sdíleného Kotlinu a přispíval do UI
-      Androidu (Jetpack Compose). Jako odpovědný za iOS aplikaci jsem otestoval a schválil
-      nasazení KMP verze do produkce.</p>
+    <p class="dialog-lead"><strong>Kotlin Multiplatform</strong> — převod do KMP byl týmový projekt:
+      featury jsme si rozdělili a ty své jsem dělal samostatně. iOS UI jsem napojoval
+      na sdílenou vrstvu, části kódu přepisoval do sdíleného Kotlinu a přispíval
+      i do UI Androidu (Jetpack Compose). KMP verzi před nasazením do produkce každý z nás
+      samostatně otestoval a o vydání jsme rozhodli společně.</p>
     <p class="dialog-lead"><strong>Swift 6</strong> — vedl jsem přechod aplikací na Swift 6
       a strict concurrency: async/await a aktory napříč codebase, Sendable a izolace
       na @MainActor.</p>
@@ -823,14 +825,18 @@
     <p class="dialog-lead"><strong>AI code review</strong> — do CI/CD jsem integroval AI code
       review postavené na Claude Code. Výsledkem je komentář k merge requestům — a s ním
       soustavnější kontrola dopadu změn na bezpečnost kódu.</p>
-    <p class="dialog-lead"><strong>Porovnávání produktů</strong> — funkci jsem navrhl
+    <p class="dialog-lead"><strong>Porovnávání produktů</strong> — funkci jsem samostatně navrhl
       a implementoval od návrhu řešení po vydání (viz screenshot „porovnání produktů“
       v galerii výše). Později jsem přepracoval i vzhled a fungování detailu produktu.</p>
-    <p class="dialog-lead"><strong>Modernizace codebase</strong> — nejdřív jsem z views
-      vyčistil prezentační logiku a řízení stavu, pak je přepsal do SwiftUI (navigace
-      zůstala v UIKitu). Vybrané featury jsem převedl z REST API na GraphQL, zavedl
-      lokální SPM balíčky a do aplikací jsem zavedl Liquid Glass.</p>
-    <p class="dialog-lead"><strong>Nákup přímo z aplikace</strong> — napojil jsem aplikace
+    <p class="dialog-lead"><strong>Architektura a modernizace codebase</strong> — sám jsem z views
+      vyčistil prezentační logiku a řízení stavu a zavedl v prezentační vrstvě MVP; jako
+      iOS garant jsem pak v code review hlídal konzistenci architektury. Další kroky byly
+      týmové, s featurami rozdělenými mezi nás: přechod na CLEAN + MVI s FlowControllery
+      odsouhlasený s externím partnerem, přepis views do SwiftUI (navigace zůstala
+      v UIKitu), převod vybraných featur z REST API na GraphQL a lokální SPM balíčky.</p>
+    <p class="dialog-lead"><strong>Liquid Glass</strong> — do aplikací jsem samostatně zavedl
+      nový vzhled Liquid Glass.</p>
+    <p class="dialog-lead"><strong>Nákup přímo z aplikace</strong> — samostatně jsem napojil aplikace
       na webový košík Heureky — košík běží ve webview přímo v aplikaci, takže uživatel
       nakoupí, aniž by ji opustil.</p>
     <h4>Co aplikace umí</h4>
